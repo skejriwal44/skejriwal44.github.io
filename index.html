@@ -60,7 +60,6 @@
   
     .news:hover {
       overflow-y: auto;
-      background-color: #f5f5f5; /* Change background color on hover */
     }
   
     .news::-webkit-scrollbar {
@@ -235,7 +234,7 @@
           <p>
             Hello! My name is Shubham, and I love to work on large scale systems. <br>
             I graduated with a Bachelor's in Computer Science Engineering from <a href="https://www.bits-pilani.ac.in/pilani/" target="_blank" rel="noopener noreferrer">BITS Pilani</a> 
-            in 2022, where I ranked at the <strong>top</strong> of my undergraduate cohort and receieved a <strong>100%</strong> scholarship.
+            in 2022, where I ranked at the <strong>top</strong> of my undergraduate cohort and received <strong>100%</strong> scholarship.
             I'm presently working at <a href="https://research.adobe.com/person/shubham-agarwal">Adobe Research</a> as
             a Pre-doctoral Researcher, where I primairly work with
             <a href="https://sites.google.com/site/subratamitraweb/" target="_blank" rel="noopener noreferrer">Dr. Subrata Mitra</a>
@@ -243,23 +242,30 @@
           </p>
           <p>
             I am interested in the area of <b>Machine
-            Learning + Systems</b>. My current focus is on optimizing ML systems for <b>large-scale training</b> and <b>deployment</b>. With over two years of academic and industrial research experience, 
-            I have <strong>first author</strong> publications in <strong>NSDI</strong> and <strong>FSE</strong>, and co-authorship in <strong>ASE</strong>, 
-            <strong>WWW</strong>, and <strong>PAKDD</strong>.   
+            Learning + Systems</b> where my current focus is on optimizing ML systems for <b>large-scale training</b> and <b>deployment</b>. With over two years of academic and industrial research experience, 
+            I have <strong>first author</strong> publications in <b><a href="https://research.adobe.com/person/shubham-agarwal">NSDI</a></b> and <b><a href="https://research.adobe.com/person/shubham-agarwal">FSE</a></b>, and co-authorship in <b><a href="https://research.adobe.com/person/shubham-agarwal">ASE</a></b>, 
+            <b><a href="https://research.adobe.com/person/shubham-agarwal">WWW</a></b>, and <b><a href="https://research.adobe.com/person/shubham-agarwal">PAKDD</a></b>.   
             </p>
             
             <button class="show-more-btn" onclick="toggleProfile()">Show More</button>
             <div id="profile">
               <p>
-                I am a part of the <b>Systems and Insights Group</b> where I primarily work in the Systems area. My current focus is on building <b>large scale systems for generative models</b> to enhance the resource efficiency of generative models and building <b>efficient inference serving systems.</b> I also work for <b>System Reliability Research</b> where I work on building ML-based tools to <b>predict cloud outages</b> and use causal techniques for <b>cloud failure diagnosis</b> to enhance the reliability and availability of distributed cloud systems.
+                I am a part of the <b>Systems and Insights Group</b> at Adobe Research, where I primarily focus 
+                on building <b>large-scale systems</b> to enhance <b>resource utilization and efficiency</b> for <b>generative models</b>.
+                I focus on techniques such as Approximate Computing, Constraint-based scheduling, and runtime adaptation strategies for distributed systems.
+                
+
+                </b> I have also worked for <b>System Reliability Research</b> where  I developed ML-based tools 
+                for <b>predicting cloud outages</b> and  utilized causal techniques for  <b>cloud failure diagnosis</b>,
+                aiming to improve the reliability and availability of distributed cloud systems.
               </p>
               <ul>
-                <li>Some of the Ongoing works:
+                <li>Currently, my ongoing projects include:
                   <ul>
-                    <li>Approximate caching: Resource-Efficient Text-to-image diffusion Models.</li>
-                    <li>Cluster scheduling: Optimizing Inferencing Platforms for text-to-image workloads.</li>
-                    <li>Model-less inferencing: Query-Aware Model Selection for Serving Generative Workloads.</li>
-                    <li>Predictive Cloud Outages: Develop model for anticipating cloud outages.
+                    <li><b>Approximate caching</b>: Resource-Efficient Text-to-image diffusion Models.</li>
+                    <li><b>Cluster scheduling</b>: Optimizing Inferencing Platforms for text-to-image workloads.</li>
+                    <li><b>Model-less inferencing</b>: Query-Aware Model Selection for Serving Generative Workloads.</li>
+                    <li><b>Predicting Cloud Outages</b>: Develop model for anticipating cloud outages.
                       <ul>
                         <li>Outage forecasting based on system metrics and alerts</li>
                         <li>Latency prediction to detect anomalous data ingestion workflows</li>
@@ -268,9 +274,8 @@
                   </ul>
                 </li>
               </ul>
-              <p>If you have any idea to discuss or any question about my work, please contact me at <b><a href="mailto:skejriwal44@gmail.com" title="email">skejriwal44@gmail.com</a></b></p>
+              <p>If you have any idea or any question about my work, please contact me at <b><a href="mailto:skejriwal44@gmail.com" title="email">skejriwal44@gmail.com</a></b></p>
             </div>
-
 
         </div>
 
@@ -281,7 +286,7 @@
         
 
         <div class="publications">
-          <h2 id="pubid">Publications and Preprints</h2>
+          <h2 id="pubid">Selected Publications</h2>
           <ol class="bibliography">
             <li>
               <div class="row">
@@ -491,6 +496,8 @@
 
 
           </ol>
+
+          
         </div>
 
         <div class="publications">
@@ -498,7 +505,7 @@
           <ol class="bibliography">
             <li>
               <div class="row">
-                <div class="col-sm-2 abbr"></div>
+                <div class="col-sm-2 abbr"><abbr class="badge">US Patent</abbr></div>
                 <div id="patent1" class="col-sm-8">
                   <div class="title">Intelligent Use of Caching and Retrieval of Intermediate Noise for Resource Efficient Diffusion Models.
                   </div>
@@ -510,7 +517,7 @@
             </li>
             <li>
               <div class="row">
-                <div class="col-sm-2 abbr"></div>
+                <div class="col-sm-2 abbr"><abbr class="badge">US Patent</abbr></div>
                 <div id="patent2" class="col-sm-8">
                   <div class="title">A System and Method for Outage Forecasting.</div>
                   <div class="author">Shaddy Garg,&nbsp;<em>Shubham Agarwal</em>,&nbsp;Sumit Bisht,&nbsp;Nikhil Sheoran,&nbsp;Chahat Jain,&nbsp;Ashritha Gonuguntla,&nbsp;Shiv Saini</div>
@@ -528,6 +535,13 @@
           
           <div class="table-responsive">
             <table class="table table-sm table-borderless">
+
+              <tr>
+                <th scope="row">Jan 25, 2024</th>
+                <td>
+                  Presenting our paper "NIRVANA for Efficiently Serving Diffusion Models" at NSDI 2024!
+                </td>
+              </tr>
 
               <tr>
                 <th scope="row">Jan 25, 2024</th>
