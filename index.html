@@ -50,6 +50,75 @@
 
   <script src="/assets/js/theme.js"></script>
   <script src="/assets/js/dark_mode.js"></script>
+  <style>
+    .news {
+      max-height: 250px;
+      overflow-y: hidden;
+      position: relative;
+      transition: background-color 0.3s ease; /* Smooth transition for background color change */
+    }
+  
+    .news:hover {
+      overflow-y: auto;
+      background-color: #f5f5f5; /* Change background color on hover */
+    }
+  
+    .news::-webkit-scrollbar {
+      width: 0; /* Set width to 0 by default */
+    }
+  
+    .news:hover::-webkit-scrollbar {
+      width: 5px; /* Set width to display scrollbar on hover */
+    }
+  
+    .news::-webkit-scrollbar-thumb {
+      background-color: gray; /* Red color for scroll thumb */
+      border-radius: 5px;
+    }
+
+    #profile {
+      display: none;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .show-more-btn {
+      background: none;
+      border: none;
+      color: rgb(118, 115, 115);
+      cursor: pointer;
+      font-size: 16px;
+      outline: none;
+      margin: -8px;
+    }
+    .show-more-btn:hover {
+      color: rgb(96, 95, 95);
+    }
+    .update { /* Light pink background */
+      padding: 8px;
+      border-radius: 7px;
+      margin-bottom: 10px;
+      max-width: 510px;
+      margin-left: -2px;
+      margin-top: -2px;
+      border: 2px solid #908f8f;
+
+       /* Limiting width */
+    }
+  
+    .update a {
+      color: #ff0000; /* Red color for links */
+      font-weight: bold;
+      text-decoration: none;
+    }
+  
+    .update a:hover {
+      color: #cc0000; /* Darker red on hover */
+    }
+  </style>
+
 
 
 </head>
@@ -132,10 +201,13 @@
         <h1 class="post-title">
           <span class="font-weight-bold">Shubham</span> Agarwal
         </h1>
-        <p class="desc"><a href="https://research.adobe.com/person/shubham-agarwal/" target="_blank"
+        <a href="https://research.adobe.com/person/shubham-agarwal/" target="_blank"
             rel="noopener noreferrer">Research</a> <b> Relax </b> <b> Thrive </b></p>
       </header>
 
+      <div class="update">
+        <strong>Update:</strong> I will be presenting at <a href="https://www.usenix.org/conference/nsdi24/presentation/agarwal-shubham" target="_blank" rel="noopener noreferrer">NSDI 2024</a> in Santa Clara
+      </div>
       <article>
         <div class="profile float-right">
           <figure>
@@ -162,120 +234,51 @@
         <div class="clearfix">
           <p>
             Hello! My name is Shubham, and I love to work on large scale systems. <br>
-            I work in the area of <b>Machine
-            Learning for Systems</b> and <b>Systems for Machine Learning</b>, with a primary focus on enhancing the
-            reliability and scalability of systems. 
-            <!-- My recent projects have involved developing predictive models to
-            anticipate cloud outages and creating systems that enhance the resource efficiency of generative models.  -->
-            My goal is to bridge the growing resource demands of emerging technologies while optimizing system performance.
-          </p>
-
-          <p>
-            I received my undergraduate degree in Computer Science Engineering from <a href="https://www.bits-pilani.ac.in/pilani/" target="_blank" rel="noopener noreferrer">BITS Pilani</a> in 2022.
-            I am currently working at <a href="https://research.adobe.com/person/shubham-agarwal">Adobe Research</a> as
-            a Research Associate 2. I am a part of the <b>Systems and Insights Group</b> where I primarily work in the
-            Systems area. My current focus is on building <b>large scale systems for generative models</b> to enhance the resource efficiency of generative models
-            and building <b>efficient inference serving systems.</b> I also work for <b>System Reliability Research</b> where</a> I work on building ML-bsased tools 
-            to <b>predict cloud outages</b> and use causal techniques for <b>cloud failure diagnosis</b> to enhance the reliability and availability of distributed cloud systems. 
-            My primary advisors at Adobe are 
+            I graduated with a Bachelor's in Computer Science Engineering from <a href="https://www.bits-pilani.ac.in/pilani/" target="_blank" rel="noopener noreferrer">BITS Pilani</a> 
+            in 2022, where I ranked at the <strong>top</strong> of my undergraduate cohort and receieved a <strong>100%</strong> scholarship.
+            I'm presently working at <a href="https://research.adobe.com/person/shubham-agarwal">Adobe Research</a> as
+            a Pre-doctoral Researcher, where I primairly work with
             <a href="https://sites.google.com/site/subratamitraweb/" target="_blank" rel="noopener noreferrer">Dr. Subrata Mitra</a>
             and <a href="https://www.linkedin.com/in/shiv-saini-696ab86" target="_blank" rel="noopener noreferrer">Dr. Shiv Kumar Saini</a>.
           </p>
-
-          
-
-          <!-- <p>I am always looking for folks who are interested in aiding on ongoing or newly created projects.</p> -->
-          <ul>
-
-            <li>Some of the Ongoing works:
+          <p>
+            I am interested in the area of <b>Machine
+            Learning + Systems</b>. My current focus is on optimizing ML systems for <b>large-scale training</b> and <b>deployment</b>. With over two years of academic and industrial research experience, 
+            I have <strong>first author</strong> publications in <strong>NSDI</strong> and <strong>FSE</strong>, and co-authorship in <strong>ASE</strong>, 
+            <strong>WWW</strong>, and <strong>PAKDD</strong>.   
+            </p>
+            
+            <button class="show-more-btn" onclick="toggleProfile()">Show More</button>
+            <div id="profile">
+              <p>
+                I am a part of the <b>Systems and Insights Group</b> where I primarily work in the Systems area. My current focus is on building <b>large scale systems for generative models</b> to enhance the resource efficiency of generative models and building <b>efficient inference serving systems.</b> I also work for <b>System Reliability Research</b> where I work on building ML-based tools to <b>predict cloud outages</b> and use causal techniques for <b>cloud failure diagnosis</b> to enhance the reliability and availability of distributed cloud systems.
+              </p>
               <ul>
-                <li>Approximate caching: Resource-Efficient Text-to-image diffusion Models.
-                </li>
-                <li>Cluster scheduling: Optimizing Inferencing Platforms for text-to-image workloads.
-                </li>
-                <li>Model-less inferencing: Query-Aware Model Selection for Serving Generative Workloads.
-                </li>
-                <li>Predictive Cloud Outages: Develope model for anticipating cloud outages.
+                <li>Some of the Ongoing works:
                   <ul>
-                    <li>Outage forecasting based on system metrics and alerts</li>
-                    <li>Latency prediction to detect anomalous data ingestion workflows</li>
+                    <li>Approximate caching: Resource-Efficient Text-to-image diffusion Models.</li>
+                    <li>Cluster scheduling: Optimizing Inferencing Platforms for text-to-image workloads.</li>
+                    <li>Model-less inferencing: Query-Aware Model Selection for Serving Generative Workloads.</li>
+                    <li>Predictive Cloud Outages: Develop model for anticipating cloud outages.
+                      <ul>
+                        <li>Outage forecasting based on system metrics and alerts</li>
+                        <li>Latency prediction to detect anomalous data ingestion workflows</li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
+              <p>If you have any idea to discuss or any question about my work, please contact me at <b><a href="mailto:skejriwal44@gmail.com" title="email">skejriwal44@gmail.com</a></b></p>
+            </div>
 
-          <p>If you have any idea to discuss or any question about my work, please contact me at
-            <b><a href="mailto:skejriwal44@gmail.com" title="email">skejriwal44@gmail.com</a></b>
-          </p>
 
         </div>
 
-        <!-- News -->
-        <h2>News</h2>
-        <div class="news" style="overflow-y: auto; max-height: 250px;">
-          
-          <div class="table-responsive">
-            <table class="table table-sm table-borderless">
 
-              <tr>
-                <th scope="row">Jan 25, 2024</th>
-                <td>
-                  Promoted to Research Associate 2 at Adobe Research!
-
-                </td>
-              </tr>
+      
 
 
-              <tr>
-                <th scope="row">Jan 25, 2024</th>
-                <td>
-                  New Paper accepted at PAKDD 2024 on Scaling Visualization Recommendation Models!
-
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Dec 11, 2023</th>
-                <td>
-                  New Paper accepted at NSDI 2024 on Approximate Caching for Diffusion Models!
-
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Sep 14, 2023</th>
-                <td>
-                  Presented our Paper "ESRO: Experience Assisted Service Reliability against Outages" at ASE!
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Jul 07, 2023</th>
-                <td>
-                  New Paper accepted at ASE 2023 on Root Cause Detection using alerts and outage reports!
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Feb 26, 2023</th>
-                <td>
-                  New Paper accepted at SIGMOD 2023 Demo on Exporatory Data Analysis tool!
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="row">Aug 20, 2023</th>
-                <td>
-                  Graduated with a Bachelor's in Computer Science from BITS Pilani!
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Jul 10, 2023</th>
-                <td>
-                  Joined Adobe Research as a Research Associate!
-                </td>
-              </tr>
-
-            </table>
-          </div>
-        </div>
+        
 
         <div class="publications">
           <h2 id="pubid">Publications and Preprints</h2>
@@ -519,6 +522,74 @@
           </ol>
         </div>
 
+        <!-- News -->
+        <h2>News</h2>
+        <div class="news" style="overflow-y: auto; max-height: 250px;">
+          
+          <div class="table-responsive">
+            <table class="table table-sm table-borderless">
+
+              <tr>
+                <th scope="row">Jan 25, 2024</th>
+                <td>
+                  Promoted to Research Associate 2 at Adobe Research!
+
+                </td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">Jan 25, 2024</th>
+                <td>
+                  New Paper accepted at PAKDD 2024 on Scaling Visualization Recommendation Models!
+
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Dec 11, 2023</th>
+                <td>
+                  New Paper accepted at NSDI 2024 on Approximate Caching for Diffusion Models!
+
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Sep 14, 2023</th>
+                <td>
+                  Presented our Paper "ESRO: Experience Assisted Service Reliability against Outages" at ASE!
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Jul 07, 2023</th>
+                <td>
+                  New Paper accepted at ASE 2023 on Root Cause Detection using alerts and outage reports!
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Feb 26, 2023</th>
+                <td>
+                  New Paper accepted at SIGMOD 2023 Demo on Exporatory Data Analysis tool!
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Aug 20, 2023</th>
+                <td>
+                  Graduated with a Bachelor's in Computer Science from BITS Pilani!
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Jul 10, 2023</th>
+                <td>
+                  Joined Adobe Research as a Research Associate!
+                </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+<br>
+<br>
+
         <!-- Social -->
         <div class="social">
           <div class="contact-icons">
@@ -591,6 +662,22 @@
   <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var profile = document.getElementById('profile');
+      var btn = document.querySelector('.show-more-btn');
+      btn.addEventListener('click', function() {
+        if (profile.style.display === 'none' || profile.style.display === '') {
+          profile.style.display = 'block';
+          btn.textContent = 'Show Less';
+        } else {
+          profile.style.display = 'none';
+          btn.textContent = 'Show More';
+        }
+      });
+    });
+  </script>
+  
 </body>
 
 </html>

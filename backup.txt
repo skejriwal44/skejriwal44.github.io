@@ -1,0 +1,37 @@
+
+            <p>
+            I am a part of the <b>Systems and Insights Group</b> where I primarily work in the
+            Systems area. My current focus is on building <b>large scale systems for generative models</b> to enhance the resource efficiency of generative models
+            and building <b>efficient inference serving systems.</b> I also work for <b>System Reliability Research</b> where</a> I work on building ML-bsased tools 
+            to <b>predict cloud outages</b> and use causal techniques for <b>cloud failure diagnosis</b> to enhance the reliability and availability of distributed cloud systems. 
+            <!-- My primary advisors at Adobe are 
+            <a href="https://sites.google.com/site/subratamitraweb/" target="_blank" rel="noopener noreferrer">Dr. Subrata Mitra</a>
+            and <a href="https://www.linkedin.com/in/shiv-saini-696ab86" target="_blank" rel="noopener noreferrer">Dr. Shiv Kumar Saini</a>. -->
+          </p>
+
+          
+
+          <!-- <p>I am always looking for folks who are interested in aiding on ongoing or newly created projects.</p> -->
+          <ul>
+
+            <li>Some of the Ongoing works:
+              <ul>
+                <li>Approximate caching: Resource-Efficient Text-to-image diffusion Models.
+                </li>
+                <li>Cluster scheduling: Optimizing Inferencing Platforms for text-to-image workloads.
+                </li>
+                <li>Model-less inferencing: Query-Aware Model Selection for Serving Generative Workloads.
+                </li>
+                <li>Predictive Cloud Outages: Develope model for anticipating cloud outages.
+                  <ul>
+                    <li>Outage forecasting based on system metrics and alerts</li>
+                    <li>Latency prediction to detect anomalous data ingestion workflows</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <p>If you have any idea to discuss or any question about my work, please contact me at
+            <b><a href="mailto:skejriwal44@gmail.com" title="email">skejriwal44@gmail.com</a></b>
+          </p>
