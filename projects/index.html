@@ -130,14 +130,77 @@
 
 
                 <div class="projects">
-                    <!-- Display categorized projects -->
-                    <!-- <h2 class="category">Active projects</h2> -->
-                    <h3 class="category" style="color: #555;">
-                        <span style="font-weight: 80;">Internship Mentoring Projects</span>
-                    </h3>
-                    <hr>
+    <!-- Display categorized projects -->
+    <h3 class="category" style="color: #555;">
+        <span style="font-weight: 80;">Internship Mentoring Projects</span>
+    </h3>
+    <hr>
 
-                </div>
+    <!-- Project 1 -->
+    <div class="project">
+        <h4>Project 1: Machine Learning Model Optimization</h4>
+        <p class="brief-description">This project focuses on optimizing machine learning models for faster inference and deployment efficiency...</p>
+        <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
+        <p class="full-description" style="display: none;">
+            This project delves deeper into algorithmic improvements and resource management techniques for scaling machine learning models.
+            Students will learn about quantization, pruning, and other optimization techniques.
+        </p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+        <h4>Project 2: Real-Time Data Streaming</h4>
+        <p class="brief-description">Explore the challenges and solutions for building real-time data streaming pipelines...</p>
+        <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
+        <p class="full-description" style="display: none;">
+            This project will cover technologies like Kafka, Flink, and Spark Streaming, emphasizing fault tolerance and low-latency processing.
+        </p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+        <h4>Project 3: Cloud-Based Distributed Systems</h4>
+        <p class="brief-description">Learn the principles of designing distributed systems for scalability and reliability...</p>
+        <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
+        <p class="full-description" style="display: none;">
+            The project includes hands-on experience with distributed databases, consensus algorithms, and cloud infrastructure.
+        </p>
+    </div>
+</div>
+
+<!-- Add some CSS -->
+<style>
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .brief-description {
+        margin: 5px 0;
+    }
+
+    .expand-btn {
+        color: #007bff;
+        background: none;
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+        padding: 0;
+    }
+
+    .expand-btn:hover {
+        color: #0056b3;
+    }
+</style>
+
+<!-- Add JavaScript for interactivity -->
+<script>
+    function toggleDetails(button) {
+        const fullDescription = button.nextElementSibling;
+        const isExpanded = fullDescription.style.display === "block";
+        fullDescription.style.display = isExpanded ? "none" : "block";
+        button.textContent = isExpanded ? "Read more" : "Read less";
+    }
+</script>
 
 
                 <br><br><br><br>
