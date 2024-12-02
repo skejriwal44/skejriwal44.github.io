@@ -130,153 +130,152 @@
 
 
                 <div class="projects">
-    <!-- Display categorized projects -->
-    <div class="projects-container">
-        <h3 class="category">
-            Internship Mentoring Projects
-        </h3>
-        <hr>
-    
-        <!-- Project 1 -->
-        <div class="project-tile">
-            <h4>Machine Learning Model Optimization</h4>
-            <p class="brief-description">This project focuses on optimizing machine learning models for faster inference and deployment efficiency...</p>
-            <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
-            <p class="full-description" style="display: none;">
-                This project delves deeper into algorithmic improvements and resource management techniques for scaling machine learning models.
-                Students will learn about quantization, pruning, and other optimization techniques.
-            </p>
-        </div>
-    
-        <!-- Project 2 -->
-        <div class="project-tile">
-            <h4>Real-Time Data Streaming</h4>
-            <p class="brief-description">Explore the challenges and solutions for building real-time data streaming pipelines...</p>
-            <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
-            <p class="full-description" style="display: none;">
-                This project will cover technologies like Kafka, Flink, and Spark Streaming, emphasizing fault tolerance and low-latency processing.
-            </p>
-        </div>
-    
-        <!-- Project 3 -->
-        <div class="project-tile">
-            <h4>Cloud-Based Distributed Systems</h4>
-            <p class="brief-description">Learn the principles of designing distributed systems for scalability and reliability...</p>
-            <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
-            <p class="full-description" style="display: none;">
-                The project includes hands-on experience with distributed databases, consensus algorithms, and cloud infrastructure.
-            </p>
-        </div>
-    </div>
-    
-    <!-- Updated CSS -->
-    <style>
-        /* Container Styling */
-        .projects-container {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fbfbfb;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-            color: #111111;
-        }
-    
-        /* Category Title */
-        .category {
-            font-size: 28px;
-            font-weight: 300;
-            color: #333;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-    
-        /* Project Count */
-        .project-count {
-            font-size: 16px;
-            font-weight: 300;
-            color: #1111;
-        }
-    
-        /* Project Tile */
-        .project-tile {
-            background: #fefefe;
-            border: 1px solid #e6e6e6;
-            border-radius: 8px;
-            padding: 15px 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-            transition: box-shadow 0.3s ease, transform 0.2s ease;
-        }
-    
-        .project-tile:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
-        }
-    
-        /* Titles */
-        h4 {
-            font-size: 22px;
-            font-weight: 300;
-            color: #222;
-            margin-bottom: 8px;
-        }
-    
-        /* Descriptions */
-        .brief-description {
-            margin: 10px 0;
-            color: #3a3939;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 1.6;
-        }
-    
-        .full-description {
-            margin-top: 10px;
-            color: #313030;
-            font-size: 15px;
-            font-weight: 300;
-            line-height: 1.5;
-        }
-    
-        /* Buttons */
-        .expand-btn {
-            color: #6c8fac;
-            background: none;
-            border: none;
-            cursor: pointer;
-            text-decoration: underline;
-            padding: 0;
-            font-size: 14px;
-            font-weight: 300;
-            transition: color 0.2s ease;
-        }
-    
-        .expand-btn:hover {
-            color: #546f8b;
-        }
-    
-        /* Separator */
-        hr {
-            border: 0;
-            border-top: 1px solid #eaeaea;
-            margin: 20px 0;
-        }
-    </style>
-    
-    <!-- JavaScript remains unchanged -->
-    <script>
-        function toggleDetails(button) {
-            const fullDescription = button.nextElementSibling;
-            const isExpanded = fullDescription.style.display === "block";
-            fullDescription.style.display = isExpanded ? "none" : "block";
-            button.textContent = isExpanded ? "Read more" : "Read less";
-        }
-    </script>
-    
+                    <!-- Display categorized projects -->
+                    <div class="projects-container">
+                        <h3 class="category">
+                            Internship Mentoring Projects
+                        </h3>
+                        <hr>
 
-                <br><br><br><br>
+                        <!-- Project 1 -->
+                        <div class="project-tile">
+                            <h4>Machine Learning Model Optimization</h4>
+                            <p class="brief-description">This project focuses on optimizing machine learning models for
+                                faster inference and deployment efficiency...</p>
+                            <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
+                            <p class="full-description" style="display: none;">
+                                This project delves deeper into algorithmic improvements and resource management
+                                techniques for scaling machine learning models.
+                                Students will learn about quantization, pruning, and other optimization techniques.
+                            </p>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-tile">
+                            <h4>Real-Time Data Streaming</h4>
+                            <p class="brief-description">Explore the challenges and solutions for building real-time
+                                data streaming pipelines...</p>
+                            <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
+                            <p class="full-description" style="display: none;">
+                                This project will cover technologies like Kafka, Flink, and Spark Streaming, emphasizing
+                                fault tolerance and low-latency processing.
+                            </p>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-tile">
+                            <h4>Cloud-Based Distributed Systems</h4>
+                            <p class="brief-description">Learn the principles of designing distributed systems for
+                                scalability and reliability...</p>
+                            <button class="expand-btn" onclick="toggleDetails(this)">Read more</button>
+                            <p class="full-description" style="display: none;">
+                                The project includes hands-on experience with distributed databases, consensus
+                                algorithms, and cloud infrastructure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Updated CSS -->
+                    <style>
+                        /* Container Styling */
+                        .projects-container {
+                            font-family: 'Arial', sans-serif;
+                            max-width: 900px;
+                            margin: 20px auto;
+                            background: #ffffff;
+                            border-radius: 12px;
+                            padding: 25px;
+                            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+                            color: #222;
+                        }
+
+                        /* Category Title */
+                        .category {
+                            font-size: 26px;
+                            font-weight: 400;
+                            color: #444;
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+
+                        /* Project Tile */
+                        .project-tile {
+                            background: #f9f9f9;
+                            border: 1px solid #d6d6d6;
+                            border-radius: 10px;
+                            padding: 20px;
+                            margin-bottom: 20px;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+                            transition: box-shadow 0.3s ease, transform 0.2s ease;
+                        }
+
+                        .project-tile:hover {
+                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                            transform: translateY(-2px);
+                        }
+
+                        /* Project Titles */
+                        h4 {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: #222;
+                            margin-bottom: 10px;
+                        }
+
+                        /* Descriptions */
+                        .brief-description {
+                            margin: 10px 0;
+                            color: #333;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 1.6;
+                        }
+
+                        .full-description {
+                            margin-top: 10px;
+                            color: #444;
+                            font-size: 15px;
+                            font-weight: 300;
+                            line-height: 1.5;
+                        }
+
+                        /* Buttons */
+                        .expand-btn {
+                            color: #0056b3;
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+                            text-decoration: underline;
+                            padding: 0;
+                            font-size: 15px;
+                            font-weight: 400;
+                            transition: color 0.2s ease;
+                        }
+
+                        .expand-btn:hover {
+                            color: #003d80;
+                        }
+
+                        /* Separator */
+                        hr {
+                            border: 0;
+                            border-top: 1px solid #dddddd;
+                            margin: 20px 0;
+                        }
+                    </style>
+
+                    <!-- JavaScript -->
+                    <script>
+                        function toggleDetails(button) {
+                            const fullDescription = button.nextElementSibling;
+                            const isExpanded = fullDescription.style.display === "block";
+                            fullDescription.style.display = isExpanded ? "none" : "block";
+                            button.textContent = isExpanded ? "Read more" : "Read less";
+                        }
+                    </script>
+
+
+                    <br><br><br><br>
 
 
 
