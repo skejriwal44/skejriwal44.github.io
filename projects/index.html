@@ -132,8 +132,9 @@
                 <div class="projects">
     <!-- Display categorized projects -->
     <div class="projects-container">
-        <h3 class="category" style="color: #666; font-weight: normal; text-align: center;">
+        <h3 class="category">
             Internship Mentoring Projects
+            <span class="project-count">(3 Projects)</span>
         </h3>
         <hr>
     
@@ -171,20 +172,39 @@
     
     <!-- Updated CSS -->
     <style>
+        /* Container Styling */
         .projects-container {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
-            background: #fcfcfc;
+            background: #fbfbfb;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            color: #444;
         }
     
+        /* Category Title */
+        .category {
+            font-size: 24px;
+            font-weight: 300;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    
+        /* Project Count */
+        .project-count {
+            font-size: 16px;
+            font-weight: 300;
+            color: #777;
+        }
+    
+        /* Project Tile */
         .project-tile {
-            background: #fdfdfd;
-            border: 1px solid #eaeaea;
-            border-radius: 10px;
+            background: #fefefe;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
             padding: 15px 20px;
             margin-bottom: 20px;
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
@@ -196,36 +216,49 @@
             transform: translateY(-2px);
         }
     
+        /* Titles */
         h4 {
-            color: #333;
-            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 300;
+            color: #222;
+            margin-bottom: 8px;
         }
     
+        /* Descriptions */
         .brief-description {
             margin: 10px 0;
             color: #555;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.6;
         }
     
+        .full-description {
+            margin-top: 10px;
+            color: #666;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+    
+        /* Buttons */
         .expand-btn {
-            color: #7b9ab8;
+            color: #6c8fac;
             background: none;
             border: none;
             cursor: pointer;
             text-decoration: underline;
             padding: 0;
             font-size: 14px;
+            font-weight: 300;
             transition: color 0.2s ease;
         }
     
         .expand-btn:hover {
-            color: #607d96;
+            color: #546f8b;
         }
     
-        .full-description {
-            margin-top: 10px;
-            color: #666;
-        }
-    
+        /* Separator */
         hr {
             border: 0;
             border-top: 1px solid #eaeaea;
