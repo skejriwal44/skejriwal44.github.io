@@ -132,7 +132,7 @@
                 <div class="projects">
     <!-- Display categorized projects -->
     <div class="projects-container">
-        <h3 class="category" style="color: #555; font-weight: normal;">
+        <h3 class="category" style="color: #666; font-weight: normal; text-align: center;">
             Internship Mentoring Projects
         </h3>
         <hr>
@@ -175,48 +175,65 @@
             font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
+            background: #fcfcfc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
     
         .project-tile {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            background: #fdfdfd;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
             padding: 15px 20px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease, transform 0.2s ease;
         }
     
         .project-tile:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+    
+        h4 {
+            color: #333;
+            margin-bottom: 10px;
         }
     
         .brief-description {
             margin: 10px 0;
-            color: #333;
+            color: #555;
         }
     
         .expand-btn {
-            color: #007bff;
+            color: #7b9ab8;
             background: none;
             border: none;
             cursor: pointer;
             text-decoration: underline;
             padding: 0;
             font-size: 14px;
+            transition: color 0.2s ease;
         }
     
         .expand-btn:hover {
-            color: #0056b3;
+            color: #607d96;
         }
     
         .full-description {
             margin-top: 10px;
-            color: #555;
+            color: #666;
+        }
+    
+        hr {
+            border: 0;
+            border-top: 1px solid #eaeaea;
+            margin: 20px 0;
         }
     </style>
     
-    <!-- JavaScript for interactivity remains the same -->
+    <!-- JavaScript remains unchanged -->
     <script>
         function toggleDetails(button) {
             const fullDescription = button.nextElementSibling;
@@ -225,6 +242,7 @@
             button.textContent = isExpanded ? "Read more" : "Read less";
         }
     </script>
+    
 
                 <br><br><br><br>
 
