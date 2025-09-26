@@ -1,5 +1,7 @@
 # Shubham's [website](https://skejriwal44.github.io/)
 
+ python3 -m http.server 4000
+
 Used from the al-folio template mentioned below.
 
 ## License
