@@ -1,7 +1,10 @@
 /* Homepage styles, layered on top of main.css. */
 
 :root {
-    --home-muted: #5f6368;
+    --global-text-color: #1c1c1e;
+    --home-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --home-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --home-muted: #5c6066;
     --home-tint: rgba(181, 9, 172, 0.08);
     --home-tint-strong: rgba(181, 9, 172, 0.16);
     --home-border: rgba(0, 0, 0, 0.1);
@@ -20,17 +23,32 @@ html {
 
 body {
     padding-bottom: 0;
-    font-size: 1rem;
+    font-family: var(--home-sans);
+    font-size: 1.0625rem;
     font-weight: 400;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+.navbar,
+.btn,
+table,
+button {
+    font-family: var(--home-sans);
 }
 
 .post article b,
 .post article strong {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .navbar .nav-link {
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -53,8 +71,7 @@ body {
 
 @supports not (text-wrap: pretty) {
     .publications ol.bibliography li .title,
-    .publications ol.bibliography li .author,
-    .research-card p {
+    .publications ol.bibliography li .author {
         text-wrap: balance;
     }
 }
@@ -70,8 +87,11 @@ body {
 }
 
 .post .post-header .post-title {
-    font-size: 2.4rem;
-    letter-spacing: -0.01em;
+    font-family: var(--home-serif);
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
 }
 
 .profile.float-right {
@@ -91,8 +111,10 @@ body {
 /* Section headings */
 
 .post article h2 {
-    font-size: 1.45rem;
-    font-weight: 500;
+    font-family: var(--home-serif);
+    font-size: 1.55rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
     margin: 0 0 0.9rem;
     padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--home-border);
@@ -106,43 +128,40 @@ body {
 
 .section-note {
     color: var(--home-muted);
-    font-size: 0.92rem;
-    margin: -0.25rem 0 1.1rem !important;
+    font-size: 0.97rem;
+    margin: -0.2rem 0 1.15rem !important;
 }
 
 /* Research threads */
 
-.research-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2.5rem;
+.post article h3.thread {
+    font-family: var(--home-serif);
+    font-size: 1.18rem;
+    font-weight: 600;
+    margin: 1.7rem 0 0.75rem;
 }
 
-.research-card+.research-card {
-    padding-left: 2.5rem;
-    border-left: 1px solid var(--home-border);
+.research-item {
+    margin-bottom: 0.95rem;
 }
 
-.research-card h3 {
-    font-size: 1.08rem;
-    font-weight: 500;
-    margin: 0 0 0.1rem;
+.research-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 0.6rem;
+    font-weight: 600;
 }
 
-.research-card p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 0.7rem;
-}
-
-.research-card p:last-child {
-    margin-bottom: 0;
-}
-
-.research-card .research-stat {
+.research-tag {
     color: var(--home-muted);
-    font-size: 0.88rem;
-    margin-bottom: 0.75rem;
+    font-size: 0.94rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.research-item p {
+    margin: 0.1rem 0 0 !important;
 }
 
 /* Scrollable panels */
@@ -198,8 +217,9 @@ body {
     background: none;
     border: 0;
     color: var(--global-theme-color);
-    font-size: 0.88rem;
-    font-weight: 500;
+    font-family: var(--home-sans);
+    font-size: 0.94rem;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -235,7 +255,8 @@ body {
     box-shadow: none;
     border-radius: 6px;
     padding: 0.32rem 0.3rem;
-    font-size: 0.74rem;
+    font-family: var(--home-sans);
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.01em;
     white-space: nowrap;
@@ -246,16 +267,17 @@ body {
 }
 
 .publications ol.bibliography li .title {
-    font-weight: 500;
-    line-height: 1.4;
+    font-size: 1.06rem;
+    font-weight: 600;
+    line-height: 1.35;
 }
 
 .publications ol.bibliography li .author {
     color: var(--home-muted);
-    font-size: 0.93rem;
+    font-size: 0.98rem;
     font-weight: 400;
-    line-height: 1.5;
-    margin-top: 0.15rem;
+    line-height: 1.45;
+    margin-top: 0.2rem;
 }
 
 .publications ol.bibliography li .author sup {
@@ -268,14 +290,14 @@ body {
 }
 
 .publications ol.bibliography li .author>em strong {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--global-text-color);
 }
 
 .publications ol.bibliography li .periodical {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-top: 0.1rem;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    margin-top: 0.15rem;
 }
 
 .publications ol.bibliography li .periodical em {
@@ -289,9 +311,10 @@ body {
     border-radius: 999px;
     background: var(--global-theme-color);
     color: #fff;
-    font-size: 0.72rem;
-    font-weight: 500;
-    line-height: 1.5rem;
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.4rem;
     vertical-align: 0.05em;
     white-space: nowrap;
 }
@@ -309,7 +332,7 @@ body {
     border: 1px solid var(--home-border);
     border-radius: 999px;
     color: var(--global-text-color) !important;
-    font-size: 0.8rem;
+    font-size: 0.86rem;
     line-height: 1.5rem;
     cursor: pointer;
     transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
@@ -354,8 +377,9 @@ body {
     width: 5.6rem;
     padding: 0.3rem 1rem 0.3rem 0;
     color: var(--home-muted);
-    font-size: 0.88rem;
+    font-size: 0.94rem;
     font-weight: 400;
+    font-variant-numeric: tabular-nums;
     white-space: nowrap;
     vertical-align: top;
 }
@@ -363,13 +387,13 @@ body {
 .news table.table td,
 .timeline table.table td {
     padding: 0.3rem 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
 .news th,
 .timeline th {
-    line-height: 1.62;
+    line-height: 1.6;
 }
 
 .talk-title {
@@ -379,7 +403,7 @@ body {
 .talk-venue {
     display: block;
     color: var(--home-muted);
-    font-size: 0.88rem;
+    font-size: 0.94rem;
 }
 
 .talk-venue sup {
@@ -393,7 +417,7 @@ body {
 
 .plain-list li {
     margin-bottom: 0.3rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 /* Contact and footer */
@@ -407,7 +431,7 @@ body {
     padding: 1.1rem 0;
     border-top: 1px solid var(--home-border);
     color: var(--home-muted);
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     text-align: center;
 }
 
@@ -417,8 +441,8 @@ body {
 
 @media (min-width: 576px) {
     .publications ol.bibliography li .row>.col-sm-2 {
-        flex: 0 0 8.4rem;
-        max-width: 8.4rem;
+        flex: 0 0 8.6rem;
+        max-width: 8.6rem;
     }
 
     .publications ol.bibliography li .row>.col-sm-8 {
@@ -431,7 +455,7 @@ body {
 
 @media (max-width: 575.98px) {
     .post .post-header .post-title {
-        font-size: 2rem;
+        font-size: 2.15rem;
     }
 
     .profile.float-right {
@@ -439,18 +463,6 @@ body {
         width: 60%;
         max-width: 240px;
         margin: 0 0 1.25rem;
-    }
-
-    .research-grid {
-        grid-template-columns: 1fr;
-        row-gap: 1.5rem;
-    }
-
-    .research-card+.research-card {
-        padding-left: 0;
-        padding-top: 1.5rem;
-        border-left: 0;
-        border-top: 1px solid var(--home-border);
     }
 
     .publications ol.bibliography li .abbr abbr.badge {
@@ -467,9 +479,9 @@ body {
         max-height: 300px;
     }
 
-    .news th,
-    .timeline th {
-        width: 4.9rem;
+    .news table.table th,
+    .timeline table.table th {
+        width: 5.1rem;
         padding-right: 0.6rem;
     }
 }
