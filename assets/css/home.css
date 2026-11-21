@@ -1,0 +1,438 @@
+/* Homepage styles, layered on top of main.css. */
+
+:root {
+    --home-muted: #5f6368;
+    --home-tint: rgba(181, 9, 172, 0.08);
+    --home-tint-strong: rgba(181, 9, 172, 0.16);
+    --home-border: rgba(0, 0, 0, 0.1);
+    --home-surface: #fafafa;
+}
+
+html[data-theme='dark'] {
+    --home-muted: #a9adb3;
+    --home-tint: rgba(38, 152, 186, 0.14);
+    --home-tint-strong: rgba(38, 152, 186, 0.26);
+    --home-border: rgba(255, 255, 255, 0.14);
+    --home-surface: #232325;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.post article p {
+    margin-bottom: 0.75rem;
+}
+
+/* Header */
+
+.post .post-header {
+    margin-bottom: 1.25rem;
+}
+
+.post .post-header .post-title {
+    font-size: 2.4rem;
+    letter-spacing: -0.01em;
+}
+
+.profile.float-right {
+    width: 30%;
+    margin: 0.25rem 0 1rem 1.75rem;
+}
+
+.profile figure {
+    margin: 0;
+}
+
+.profile img {
+    height: auto;
+    border-radius: 10px !important;
+}
+
+/* Section headings */
+
+.post article h2 {
+    font-size: 1.45rem;
+    font-weight: 500;
+    margin: 0 0 0.9rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--home-border);
+    scroll-margin-top: 72px;
+}
+
+.home-section,
+.publications {
+    margin-top: 2.5rem;
+}
+
+.section-note {
+    color: var(--home-muted);
+    font-size: 0.92rem;
+    margin: -0.25rem 0 1rem !important;
+}
+
+/* Research cards */
+
+.research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.research-card {
+    background: var(--home-surface);
+    border: 1px solid var(--home-border);
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem 0.5rem;
+}
+
+.research-card h3 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0 0 0.15rem;
+}
+
+.research-card p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.research-card .research-stat {
+    color: var(--global-theme-color);
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+/* Scrollable panels */
+
+.scroll-panel {
+    max-height: min(68vh, 620px);
+    overflow-y: auto;
+    overscroll-behavior: auto;
+    padding-right: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--home-border) transparent;
+}
+
+.news.scroll-panel,
+.timeline.scroll-panel {
+    max-height: 310px;
+}
+
+.scroll-panel::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-panel::-webkit-scrollbar-thumb {
+    background: var(--home-border);
+    border-radius: 6px;
+}
+
+.scroll-panel.can-scroll:not(.expanded) {
+    --fade-top: 28px;
+    --fade-bottom: 56px;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent);
+    mask-image: linear-gradient(to bottom, transparent, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent);
+}
+
+.scroll-panel.can-scroll.at-start {
+    --fade-top: 0px;
+}
+
+.scroll-panel.can-scroll.at-end {
+    --fade-bottom: 0px;
+}
+
+.scroll-panel.expanded {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+}
+
+.panel-toggle {
+    display: block;
+    margin: 0.6rem 0 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    color: var(--global-theme-color);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.panel-toggle:hover,
+.panel-toggle:focus-visible {
+    text-decoration: underline;
+}
+
+/* Publications */
+
+.publications ol.bibliography {
+    margin-bottom: 0;
+}
+
+.publications ol.bibliography li {
+    margin-bottom: 1.15rem;
+}
+
+.publications ol.bibliography li:last-child {
+    margin-bottom: 0.25rem;
+}
+
+.publications ol.bibliography li .abbr {
+    height: auto;
+    margin-bottom: 0.35rem;
+    padding-top: 0.15rem;
+}
+
+.publications ol.bibliography li .abbr abbr.badge {
+    display: block;
+    background: var(--home-tint);
+    color: var(--global-theme-color) !important;
+    box-shadow: none;
+    border-radius: 6px;
+    padding: 0.32rem 0.3rem;
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    cursor: default;
+}
+
+.publications ol.bibliography li .title {
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.publications ol.bibliography li .author {
+    color: var(--home-muted);
+    font-size: 0.93rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0.15rem;
+}
+
+.publications ol.bibliography li .author sup {
+    color: inherit;
+}
+
+.publications ol.bibliography li .author>em {
+    border-bottom: 0;
+    font-style: normal;
+}
+
+.publications ol.bibliography li .author>em strong {
+    font-weight: 500;
+    color: var(--global-text-color);
+}
+
+.publications ol.bibliography li .periodical {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 0.1rem;
+}
+
+.publications ol.bibliography li .periodical em {
+    color: var(--home-muted);
+}
+
+.award {
+    display: inline-block;
+    margin-left: 0.3rem;
+    padding: 0 0.5rem;
+    border-radius: 999px;
+    background: var(--global-theme-color);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    vertical-align: 0.05em;
+    white-space: nowrap;
+}
+
+.publications ol.bibliography li .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.45rem;
+}
+
+.pub-link {
+    display: inline-block;
+    padding: 0.1rem 0.7rem;
+    border: 1px solid var(--home-border);
+    border-radius: 999px;
+    color: var(--global-text-color) !important;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.pub-link:hover,
+.pub-link:focus-visible {
+    border-color: var(--global-theme-color);
+    background: var(--home-tint);
+    color: var(--global-theme-color) !important;
+    text-decoration: none;
+}
+
+.publications ol.bibliography li div.abstract.hidden {
+    border: 0;
+    border-left: 2px solid var(--home-tint-strong);
+    margin-top: 0;
+    text-align: left;
+    transition: max-height 0.2s ease, margin-top 0.2s ease;
+}
+
+.publications ol.bibliography li div.abstract.hidden.open {
+    margin-top: 0.6rem;
+    border-color: var(--home-tint-strong);
+}
+
+.publications ol.bibliography li .hidden p {
+    margin: 0 0 0 0.8rem;
+    color: var(--home-muted);
+    line-height: 1.55;
+}
+
+/* News and talks */
+
+.news table,
+.timeline table {
+    margin-bottom: 0;
+}
+
+.news table.table th,
+.timeline table.table th {
+    width: 5.6rem;
+    padding: 0.3rem 1rem 0.3rem 0;
+    color: var(--home-muted);
+    font-size: 0.88rem;
+    font-weight: 400;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.news table.table td,
+.timeline table.table td {
+    padding: 0.3rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.news th,
+.timeline th {
+    line-height: 1.62;
+}
+
+.talk-title {
+    display: block;
+}
+
+.talk-venue {
+    display: block;
+    color: var(--home-muted);
+    font-size: 0.88rem;
+}
+
+.talk-venue sup {
+    color: inherit;
+}
+
+.plain-list {
+    margin: 0;
+    padding-left: 1.15rem;
+}
+
+.plain-list li {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+/* Contact and footer */
+
+.post article>.social {
+    margin-top: 3rem;
+}
+
+.site-footer {
+    margin-top: 2.5rem;
+    padding: 1.1rem 0;
+    border-top: 1px solid var(--home-border);
+    color: var(--home-muted);
+    font-size: 0.82rem;
+    text-align: center;
+}
+
+.site-footer .container {
+    color: inherit;
+}
+
+@media (min-width: 576px) {
+    .publications ol.bibliography li .row>.col-sm-2 {
+        flex: 0 0 8.4rem;
+        max-width: 8.4rem;
+    }
+
+    .publications ol.bibliography li .row>.col-sm-8 {
+        flex: 1 1 0;
+        max-width: none;
+        min-width: 0;
+        padding-left: 0.4rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .post .post-header .post-title {
+        font-size: 2rem;
+    }
+
+    .profile.float-right {
+        float: none !important;
+        width: 60%;
+        max-width: 240px;
+        margin: 0 0 1.25rem;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .publications ol.bibliography li .abbr abbr.badge {
+        display: inline-block;
+        padding: 0.25rem 0.6rem;
+    }
+
+    .scroll-panel {
+        max-height: 62vh;
+    }
+
+    .news.scroll-panel,
+    .timeline.scroll-panel {
+        max-height: 300px;
+    }
+
+    .news th,
+    .timeline th {
+        width: 4.9rem;
+        padding-right: 0.6rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

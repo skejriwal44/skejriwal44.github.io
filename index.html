@@ -36,16 +36,12 @@
 
   <!-- Styles -->
 
-  <!-- <link rel="shortcut icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>"> -->
-
-  <!-- <link rel="shortcut icon" href="https://img.icons8.com/color/48/path--v1.png"> -->
-
   <link rel="shortcut icon"
     href="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/24/external-smoke-heat-h-weather-royyan-wijaya-detailed-outline-royyan-wijaya.png">
 
 
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/home.css">
   <link rel="canonical" href="https://skejriwal44.github.io/">
 
   <!-- Dark Mode -->
@@ -55,85 +51,6 @@
 
   <script src="/assets/js/theme.js"></script>
   <script src="/assets/js/dark_mode.js"></script>
-  <style>
-    .news {
-      max-height: 250px;
-      overflow-y: hidden;
-      position: relative;
-      transition: background-color 0.3s ease;
-      /* Smooth transition for background color change */
-    }
-
-    .news:hover {
-      overflow-y: auto;
-    }
-
-    .news::-webkit-scrollbar {
-      width: 0;
-      /* Set width to 0 by default */
-    }
-
-    .news:hover::-webkit-scrollbar {
-      width: 5px;
-      /* Set width to display scrollbar on hover */
-    }
-
-    .news::-webkit-scrollbar-thumb {
-      background-color: gray;
-      /* Red color for scroll thumb */
-      border-radius: 5px;
-    }
-
-    #profile {
-      display: none;
-      padding: 10px;
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-    .show-more-btn {
-      background: none;
-      border: none;
-      color: rgb(118, 115, 115);
-      cursor: pointer;
-      font-size: 16px;
-      outline: none;
-      margin: -8px;
-    }
-
-    .show-more-btn:hover {
-      color: rgb(96, 95, 95);
-    }
-
-    .update {
-      /* Light pink background */
-      padding: 8px;
-      border-radius: 7px;
-      margin-bottom: 11px;
-      max-width: 510px;
-      margin-left: -2px;
-      margin-top: 2px;
-      border: 2px solid #b1b1b1;
-
-      /* Limiting width */
-    }
-
-    .update a {
-      color: #ff0000;
-      /* Red color for links */
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .update a:hover {
-      color: #cc0000;
-      /* Darker red on hover */
-    }
-  </style>
-
-
 
 </head>
 
@@ -176,13 +93,17 @@
               <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
             </li>
 
-            <!-- Blog -->
+            <!-- Sections -->
             <li class="nav-item ">
               <a class="nav-link" href="#pubid">publications</a>
             </li>
 
             <li class="nav-item ">
               <a class="nav-link" href="#patentid">patents</a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" href="#talksid">talks</a>
             </li>
 
 
@@ -216,9 +137,6 @@
         <h1 class="post-title">
           <span class="font-weight-bold">Shubham</span> Agarwal
         </h1>
-        <!-- <a href="https://research.adobe.com/person/shubham-agarwal/" target="_blank"
-            rel="noopener noreferrer">Research</a> <b> Relax </b> <b> Thrive </b> -->
-        <!-- </p> -->
       </header>
 
 
@@ -229,53 +147,32 @@
           <figure>
 
             <picture>
-              <!-- <source media="(max-width: 480px)" srcset="/assets/img/prof_pic-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/prof_pic-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/prof_pic-1400.webp" />
-    -->
 
               <!-- Fallback to the original file -->
-              <img class="img-fluid z-dept-1 rounded" src="assets/img/ShubhamAgarwal copy.jpg" alt="Shubham Agarwal Profile Pic">
+              <img class="img-fluid rounded" src="/assets/img/profile.jpg" width="755" height="800" alt="Portrait of Shubham Agarwal">
 
             </picture>
 
           </figure>
-
-
-          <!-- 
-            <div class="address">
-              <p>Located in Banaglore, India</p>
-
-            </div> -->
         </div>
 
         <div class="clearfix">
 
-          <!-- <div class="update">
-            <strong>Update:</strong> I will be visiting <a
-            href="https://research.adobe.com/" target="_blank"
-            rel="noopener noreferrer">Adobe Research</a>, San Jose in Sept '24</div> -->
-          <!-- <div class="update">
-            <strong>Update:</strong> Applying for a Ph.D. in Computer Science, Fall 2025</div> -->
-
-
-            <!-- Hi! I'm a PhD student in Computer Science & Engineering at the University 
-            of Washington, Seattle. I'm advised by Prof. Chirag Shah. My research 
-            interests span the area of AI-assisted decision making and LLMs for personalization. -->
-          <p style="margin-bottom: 0.5rem;">
+          <p>
             Hi! I am a Ph.D. candidate in Computer Science at <a href="https://eecs.berkeley.edu/" target="_blank"
               rel="noopener noreferrer">UC Berkeley</a>, in the <a href="https://sky.cs.berkeley.edu/" target="_blank"
               rel="noopener noreferrer">Sky Computing Lab</a> and the EPIC Data Lab. I am advised by Prof. <a
               href="https://people.eecs.berkeley.edu/~istoica/" target="_blank" rel="noopener noreferrer">Ion Stoica</a>
             and Prof. <a href="https://people.eecs.berkeley.edu/~adityagp/" target="_blank"
-              rel="noopener noreferrer">Aditya Parameswaran</a>, and I am a Student Researcher at Google Cloud AI Research.
+              rel="noopener noreferrer">Aditya Parameswaran</a>. I am also a Student Researcher at Google Cloud AI Research, where I lead DuoDiscover, now part of Google Antigravity.
           </p>
 
-          <p style="margin-bottom: 0.5rem;">
-            I work toward <b>trustworthy, self-improving systems</b>: AI agents that discover faster algorithms, GPU
-            kernels and serving code, and agents that write systems code with <b>machine-checked proofs</b>. I am a
-            core developer of <a href="https://github.com/skydiscover-ai/skydiscover"
-              target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source platform for self-improving systems.
+          <p>
+            My research is on <b>self-improving AI and systems</b>. I build agents that continuously optimize systems
+            such as LLM serving engines and GPU kernels, and agents that build new systems backed by tests and
+            <b>machine-checked proofs</b>. I am a core developer and maintainer of <a
+              href="https://github.com/skydiscover-ai/skydiscover" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for
+            self-improving systems.
           </p>
 
           <p>
@@ -283,63 +180,181 @@
               rel="noopener noreferrer">Adobe Research</a>, working with <a
               href="https://sites.google.com/site/subratamitraweb/" target="_blank" rel="noopener noreferrer">Dr. Subrata
               Mitra</a> and <a href="https://research.adobe.com/person/shiv-kumar-saini/" target="_blank"
-              rel="noopener noreferrer">Dr. Shiv Kumar Saini</a> on caching and serving systems for generative AI and
-            cloud outage prediction; both shipped in Adobe products. I received my Bachelor's in
+              rel="noopener noreferrer">Dr. Shiv Kumar Saini</a> on generative-AI serving and
+            cloud reliability systems that shipped in three Adobe products. I received my Bachelor's in
             Computer Science from <a href="https://www.bits-pilani.ac.in/pilani/" target="_blank"
               rel="noopener noreferrer">BITS Pilani</a> in 2022.
           </p>
 
-         
-          <p>To get in touch with me, please email me at <b>
-            <a href="mailto:shubham3@berkeley.edu" title="email">shubham3@berkeley.edu</a></b></p>
-<!-- 
-          <button class="show-more-btn" onclick="toggleProfile()">Read More</button>
-          <div id="profile">
-            <p>
-              I am a part of the <b>Systems and Insights Group</b> at Adobe Research, where I primarily focus
-              on building <b>large-scale systems</b> to enhance <b>resource utilization and efficiency</b> for
-              <b>generative models</b>.
-              I focus on techniques such as Approximate Computing, Constraint-based scheduling, and runtime adaptation
-              strategies for distributed systems.
-              I am collaborating with <b>Purdue</b> and <b>UMass</b> professors on some of these projects.
+          <p>The best way to reach me is email: <a href="mailto:shubham3@berkeley.edu">shubham3@berkeley.edu</a>.</p>
+        </div>
 
-
-              </b> I have also worked on <b>System Reliability Research</b> where I developed ML-based tools
-              for <b>predicting cloud outages</b> and utilized causal techniques for <b>cloud failure diagnosis</b>,
-              aiming to improve the reliability and availability of distributed cloud systems.
-
-            </p>
-            <ul>
-              <li>Currently, my ongoing projects include:
-                <ul>
-                  <li><b>Approximate caching</b>: Resource-Efficient Text-to-image diffusion Models.</li>
-                  <li><b>Cluster scheduling</b>: Optimizing Inferencing Platforms for text-to-image workloads.</li>
-                  <li><b>Model-less inferencing</b>: Query-Aware Model Selection for Serving Generative Workloads.</li>
-                  <li><b>Predicting Cloud Outages</b>: Develop model for anticipating cloud outages.
-                    <ul>
-                      <li>Outage forecasting based on system metrics and alerts</li>
-                      <li>Latency prediction to detect anomalous data ingestion workflows</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+        <!-- Research -->
+        <section class="home-section">
+          <h2 id="researchid">Research</h2>
+          <p class="section-note"><a href="https://github.com/skydiscover-ai/skydiscover" target="_blank" rel="noopener noreferrer">SkyDiscover</a> is an
+            open-source framework for self-improving systems, with 800+ GitHub stars and users at Google, Uber and AMD.
+            My work on it follows two threads.</p>
+          <div class="research-grid">
+            <div class="research-card">
+              <h3>Continuous optimization</h3>
+              <p class="research-stat">2.17&times; over AMD's expert-tuned SGLang</p>
+              <p><b>Self-evolving search.</b> <a href="https://arxiv.org/abs/2602.20133" target="_blank" rel="noopener noreferrer">AdaEvolve</a> tunes the
+                search as it runs; <a href="https://arxiv.org/abs/2602.23413" target="_blank" rel="noopener noreferrer">EvoX</a> lets the LLM rewrite it.
+                Together, they beat every open framework on 96% of 196 tasks.</p>
+              <p><b>Self-evolving evaluator.</b> <a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">DuoDiscover</a> agents
+                write fast evaluators for slow benchmarks and recheck them against the real system. On SWE-fficiency,
+                it doubles the speedup of human experts (15.0&times; vs. 6.9&times;).</p>
+            </div>
+            <div class="research-card">
+              <h3>Building trustworthy systems</h3>
+              <p class="research-stat">NeurIPS 2026 Oral</p>
+              <p><b>Test-driven development.</b> Agents build a <a href="https://arxiv.org/abs/2605.24096" target="_blank" rel="noopener noreferrer">just-in-time
+                system</a> per workload and turn each caught shortcut into a test: Mac LLM engines up to 2.7&times;
+                faster than prior servers, and key-value stores that beat FASTER on 14 of 18 workloads.</p>
+              <p><b>Proof-driven development.</b> <a href="https://arxiv.org/abs/2605.23109" target="_blank" rel="noopener noreferrer">Inductive Deductive
+                Synthesis</a> writes code with its Rocq proof. It proves all 7 consistency specs for distributed
+                key-value stores (coding agents: 2), with code up to 3&times; faster than hand-verified code.</p>
+            </div>
           </div>
+        </section>
 
-        </div> -->
+        <!-- News -->
+        <section class="home-section">
+        <h2 id="newsid">News</h2>
+        <div class="news scroll-panel">
+            <table class="table table-sm table-borderless">
 
+              <tr>
+                <th scope="row">Nov 2026</th>
+                <td>Advanced to Ph.D. candidacy.</td>
+              </tr>
 
+              <tr>
+                <th scope="row">Nov 2026</th>
+                <td>Talks on SkyDiscover at the SGLang Summit, Microsoft Azure Research, AMD and Inferact.</td>
+              </tr>
 
+              <tr>
+                <th scope="row">Oct 2026</th>
+                <td>DuoDiscover is out on <a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">arXiv</a>.</td>
+              </tr>
 
+              <tr>
+                <th scope="row">Sep 2026</th>
+                <td>Inductive Deductive Synthesis accepted as an <b>Oral</b> at NeurIPS 2026; RCStat also accepted.</td>
+              </tr>
 
+              <tr>
+                <th scope="row">Aug 2026</th>
+                <td>Arming Data Agents with Tribal Knowledge accepted at VLDB 2026.</td>
+              </tr>
 
+              <tr>
+                <th scope="row">Jul 2026</th>
+                <td><b>Best Paper Award</b> at the ICML 2026 FAGEN Workshop for Fantastic Adaptive Taxonomies.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Jul 2026</th>
+                <td>EvoX accepted at COLM 2026.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Jun 2026</th>
+                <td>Joined Google Cloud AI Research as a Student Researcher.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Apr 2026</th>
+                <td>SkyDiscover accepted as a demo at ACM CAIS 2026, where I co-organized the AI Agents for Discovery in the Wild workshop.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Mar 2026</th>
+                <td>Released <a href="https://skydiscover-ai.github.io/blog.html" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for AI-driven discovery.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Jan 2026</th>
+                <td>FlowCast accepted at ICLR 2026.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Oct 2025</th>
+                <td>Supporting Our AI Overlords accepted at CIDR 2026.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Aug 2025</th>
+                <td>Started my Ph.D. at UC Berkeley.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Jul 2025</th>
+                <td>Cache-Craft accepted at SIGMOD 2025.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Jul 2024</th>
+                <td>ReCon accepted at ECCV 2024.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Mar 2024</th>
+                <td>Presented our NSDI 2024 paper on approximate caching for diffusion models, and a <a href="/docs/Shubham_Poster_Accepted_NSDI_24.pdf" target="_blank" rel="noopener noreferrer">poster</a> on quality-aware prompt scheduling.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Feb 2024</th>
+                <td>Promoted to Research Associate II at Adobe Research.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Jan 2024</th>
+                <td>ScaleViz accepted at PAKDD 2024.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Dec 2023</th>
+                <td>Approximate caching for diffusion models accepted at NSDI 2024.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Sep 2023</th>
+                <td>Presented ESRO at ASE 2023.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Jul 2023</th>
+                <td>ESRO accepted at ASE 2023.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Feb 2023</th>
+                <td>Natural-language data exploration demo accepted at SIGMOD 2023.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Aug 2022</th>
+                <td>Graduated with a Bachelor's in Computer Science from BITS Pilani.</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Jul 2022</th>
+                <td>Joined Adobe Research as a Research Associate.</td>
+              </tr>
+
+            </table>
+        </div>
+        </section>
 
         <div class="publications">
           <h2 id="pubid">Publications</h2>
-          <p style="margin-top: -0.5rem;"><sup>*</sup> equal contribution. Full list on <a
+          <p class="section-note"><sup>*</sup> equal contribution. Full list on <a
               href="https://scholar.google.com/citations?user=jzTgdZoAAAAJ&amp;hl=en" target="_blank"
               rel="noopener noreferrer">Google Scholar</a>.</p>
-          <ol class="bibliography">
+          <ol class="bibliography scroll-panel">
 
             <li>
               <div class="row">
@@ -347,8 +362,8 @@
                 <div class="col-sm-8">
                   <div class="title">Inductive Deductive Synthesis: Co-Evolving Code-and-Proof Generation</div>
                   <div class="author"><em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Alexander Krentsel<sup>*</sup>, Shu Liu<sup>*</sup>, Mert Cemri<sup>*</sup>, Audrey Cheng, Rui Meng, Tomas Pfister, Chun-Liang Li, Sylvia Ratnasamy, Aditya Parameswaran, Matei Zaharia, Ion Stoica, Mohsen Lesani</div>
-                  <div class="periodical"><em>The 40th Conference on Neural Information Processing Systems (NeurIPS) 2026</em> &nbsp;<strong style="color: var(--global-theme-color);">Oral</strong></div>
-                  <div class="links"><a href="https://neurips.cc/virtual/2026/oral/150231" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://arxiv.org/abs/2605.23109" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+                  <div class="periodical"><em>The 40th Conference on Neural Information Processing Systems (NeurIPS) 2026</em> <span class="award">Oral</span></div>
+                  <div class="links"><a href="https://neurips.cc/virtual/2026/oral/150231" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://arxiv.org/abs/2605.23109" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
               </div>
             </li>
@@ -360,7 +375,7 @@
                   <div class="title">RCStat: A Statistical Framework of Relative Contextualization in Transformers</div>
                   <div class="author">Debabrata Mahapatra, <em><strong>Shubham Agarwal</strong></em>, Apoorv Saxena, Subrata Mitra</div>
                   <div class="periodical"><em>The 40th Conference on Neural Information Processing Systems (NeurIPS) 2026</em></div>
-                  <div class="links"><a href="https://neurips.cc/virtual/2026/poster/155548" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper</a></div>
+                  <div class="links"><a href="https://neurips.cc/virtual/2026/poster/155548" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a></div>
                 </div>
               </div>
             </li>
@@ -370,9 +385,9 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">COLM'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">EvoX: Meta-Evolution for Automated Discovery</div>
-                  <div class="author">Shu Liu<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Monishwaran Maheswaran, Mert Cemri, Zhifei Li, Qiuyang Mang, Ashwin Naren, et al.</div>
+                  <div class="author">Shu Liu<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Monishwaran Maheswaran, Mert Cemri, Qiuyang Mang, Zhifei Li, et al.</div>
                   <div class="periodical"><em>The 3rd Conference on Language Modeling (COLM) 2026</em></div>
-                  <div class="links"><a href="https://arxiv.org/abs/2602.23413" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://skydiscover-ai.github.io/blog-evox.html" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Blog</a></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2602.23413" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://skydiscover-ai.github.io/blog-evox.html" class="pub-link" target="_blank" rel="noopener noreferrer">Blog</a></div>
                 </div>
               </div>
             </li>
@@ -384,7 +399,7 @@
                   <div class="title">Arming Data Agents with Tribal Knowledge</div>
                   <div class="author"><em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Asim Biswal<sup>*</sup>, Sepanta Zeighami<sup>*</sup>, Alvin Cheung, Joseph E. Gonzalez, Aditya G. Parameswaran</div>
                   <div class="periodical"><em>Proceedings of the VLDB Endowment (VLDB) 2026</em></div>
-                  <div class="links"><a href="https://arxiv.org/abs/2602.13521" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2602.13521" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
               </div>
             </li>
@@ -395,8 +410,8 @@
                 <div class="col-sm-8">
                   <div class="title">SkyDiscover: A Flexible, Adaptive Framework for AI-Driven Scientific and Algorithmic Discovery</div>
                   <div class="author">Shu Liu, Mert Cemri, <em><strong>Shubham Agarwal</strong></em>, Alexander Krentsel, Ashwin Naren, Qiuyang Mang, et al.</div>
-                  <div class="periodical"><em>The 1st ACM Conference on AI and Agentic Systems (CAIS) 2026, Demo track</em></div>
-                  <div class="links"><a href="https://caisconf.org/program/2026/demos/skydiscover/" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://github.com/skydiscover-ai/skydiscover" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a> <a href="https://skydiscover-ai.github.io/blog.html" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Blog</a></div>
+                  <div class="periodical"><em>The 1st ACM Conference on AI and Agentic Systems (CAIS) 2026, Demo</em> <span class="award">Spotlight</span></div>
+                  <div class="links"><a href="https://caisconf.org/program/2026/demos/skydiscover/" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://github.com/skydiscover-ai/skydiscover" class="pub-link" target="_blank" rel="noopener noreferrer">Code</a> <a href="https://skydiscover-ai.github.io/blog.html" class="pub-link" target="_blank" rel="noopener noreferrer">Blog</a></div>
                 </div>
               </div>
             </li>
@@ -408,7 +423,7 @@
                   <div class="title">FlowCast: Trajectory Forecasting for Scalable Zero-Cost Speculative Flow Matching</div>
                   <div class="author">Divya Jyoti Bajpai, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Apoorv Saxena<sup>*</sup>, Kuldeep Sharad Kulkarni, Subrata Mitra, Manjesh Kumar Hanawal</div>
                   <div class="periodical"><em>The 14th International Conference on Learning Representations (ICLR) 2026</em></div>
-                  <div class="links"><a href="https://iclr.cc/virtual/2026/poster/10008104" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper</a></div>
+                  <div class="links"><a href="https://iclr.cc/virtual/2026/poster/10008104" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a></div>
                 </div>
               </div>
             </li>
@@ -420,7 +435,7 @@
                   <div class="title">Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First</div>
                   <div class="author">Shu Liu, Soujanya Ponnapalli, Shreya Shankar, Sepanta Zeighami, Alan Zhu, <em><strong>Shubham Agarwal</strong></em>, et al.</div>
                   <div class="periodical"><em>The 16th Conference on Innovative Data Systems Research (CIDR) 2026</em></div>
-                  <div class="links"><a href="https://vldb.org/cidrdb/papers/2026/p32-liu.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a></div>
+                  <div class="links"><a href="https://vldb.org/cidrdb/papers/2026/p32-liu.pdf" class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a></div>
                 </div>
               </div>
             </li>
@@ -432,7 +447,7 @@
                   <div class="title">Argus: Quality-Aware High-Throughput Text-to-Image Inference Serving System</div>
                   <div class="author"><em><strong>Shubham Agarwal</strong></em>, Subrata Mitra, Saud Iqbal</div>
                   <div class="periodical"><em>The 26th ACM/IFIP International Middleware Conference (Middleware) 2025</em></div>
-                  <div class="links"><a href="https://doi.org/10.1145/3721462.3770765" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://arxiv.org/abs/2511.06724" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+                  <div class="links"><a href="https://doi.org/10.1145/3721462.3770765" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://arxiv.org/abs/2511.06724" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
               </div>
             </li>
@@ -440,13 +455,13 @@
             <li>
               <div class="row">
                 <div class="col-sm-2 abbr"><abbr class="badge">SIGMOD'25</abbr></div>
-                <div id="paper1" class="col-sm-8">
+                <div class="col-sm-8">
                   <div class="title">Cache-Craft: Managing Chunk-Caches for Efficient Retrieval-Augmented Generation</div>
                   <div class="author"><em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Sai Sundaresan<sup>*</sup>, Subrata Mitra, Debabrata Mahapatra, Archit Gupta, Rounak Sharma, Nirmal Joshua Kapu, Tong Yu, Shiv Saini</div>
                   <div class="periodical"><em>International Conference on Management of Data (SIGMOD) 2025</em></div>
-                  <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a
+                  <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="/docs/CacheCraft_SIGMOD_2025.pdf"
-                      class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+                      class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
                   </div>
                   <div class="abstract hidden">
                     <p>Retrieval-Augmented Generation (RAG) is often used with Large Language Models (LLMs) to infuse domain knowledge or userspecific information. In RAG, given a user query, a retriever extracts chunks of relevant text from a knowledge base. These chunks are sent to an LLM as part of the input prompt. Typically, any given chunk is repeatedly retrieved across user questions. However, currently, for every question, attention-layers in LLMs fully compute the key values (KVs) repeatedly for the input chunks, as state-of-the-art methods cannot reuse KV-caches when chunks appear at arbitrary locations with arbitrary contexts. Naive reuse leads to output quality degradation. This leads to potentially redundant computations on expensive GPUs and increases latency. In this work, we propose Cache-Craft, a system for managing and reusing precomputed KVs corresponding to the text chunks (we call chunk-caches) in RAG-based systems. We present how to identify chunk-caches that are reusable, how to efficiently perform a small fraction of recomputation to fix the cache to maintain output quality, and how to efficiently store and evict chunk-caches in the hardware for maximizing reuse while masking any overheads. With real production workloads as well as synthetic datasets, we show that Cache-Craft reduces redundant computation by 51% over SOTA prefix-caching and 75% over full recomputation. Additionally, with continuous batching on a real production workload, we get a 1.6× speedup in throughput and a 2× reduction in end-to-end response latency over prefix-caching while maintaining quality, for both the LLaMA-3-8B and LLaMA-3-70B models.</p>
@@ -462,25 +477,21 @@
                   <div class="title">Root Cause Analysis of Failures from Partial Causal Structures</div>
                   <div class="author">Azam Ikram<sup>*</sup>, Kenneth Lee<sup>*</sup>, <em><strong>Shubham Agarwal</strong></em>, Shiv Kumar Saini, Saurabh Bagchi, Murat Kocaoglu</div>
                   <div class="periodical"><em>The 41st Conference on Uncertainty in Artificial Intelligence (UAI) 2025</em></div>
-                  <div class="links"><a href="https://proceedings.mlr.press/v286/ikram25a.html" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Paper</a></div>
+                  <div class="links"><a href="https://proceedings.mlr.press/v286/ikram25a.html" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a></div>
                 </div>
               </div>
             </li>
 
-
-
-
             <li>
               <div class="row">
                 <div class="col-sm-2 abbr"><abbr class="badge">ECCV'24</abbr></div>
-                <div id="paper1" class="col-sm-8">
-                  <div class="title">ReCON: Training-Free Acceleration for Text-to-Image Synthesis with Retrieval of
-                    Concept Prompt Trajectories</div>
+                <div class="col-sm-8">
+                  <div class="title">ReCon: Training-Free Acceleration for Text-to-Image Synthesis with Retrieval of Concept Prompt Trajectories</div>
                   <div class="author">Chen-Yi Lu<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Mehrab Tanjim, Kanak Mahadik, Anup Rao, Subrata Mitra, Shiv K Saini, Saurabh Bagchi, Somali Chaterji</div>
                   <div class="periodical"><em>The 18th European Conference on Computer Vision (ECCV) 2024</em></div>
-                  <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a
+                  <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7666_ECCV_2024_paper.php"
-                      class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+                      class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
                   </div>
                   <div class="abstract hidden">
                     <p>Text-to-image diffusion models excel in generating photo-realistic images but are hampered by
@@ -504,13 +515,13 @@
             <li>
               <div class="row">
                 <div class="col-sm-2 abbr"><abbr class="badge">PAKDD'24</abbr></div>
-                <div id="paper1" class="col-sm-8">
+                <div class="col-sm-8">
                   <div class="title">ScaleViz: Scaling Visualization Recommendation Models on Large Data</div>
                   <div class="author">Ghazi Shazan Ahmad, <em><strong>Shubham Agarwal</strong></em>, Subrata Mitra, Ryan Rossi, Manav Doshi, Syam Manoj Kumar Paila</div>
-                  <div class="periodical"><em>The 28th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD) 2024</em> &nbsp;<strong style="color: var(--global-theme-color);">Oral</strong></div>
-                  <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a
+                  <div class="periodical"><em>The 28th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD) 2024</em> <span class="award">Oral</span></div>
+                  <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://arxiv.org/abs/2411.18657"
-                      class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+                      class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
                   </div>
                   <div class="abstract hidden">
                     <p>Automated visualization recommendation (Vis-Rec) models help users to derive crucial insights
@@ -533,12 +544,12 @@
             <li>
               <div class="row">
                 <div class="col-sm-2 abbr"><abbr class="badge">NSDI'24</abbr></div>
-                <div id="paper2" class="col-sm-8">
-                  <div class="title">Approximate Caching for Efficiently Serving Diffusion Models</div>
+                <div class="col-sm-8">
+                  <div class="title">Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models</div>
                   <div class="author"><em><strong>Shubham Agarwal</strong></em>, Subrata Mitra, Sarthak Chakraborty, Srikrishna Karanam, Koyel Mukherjee, Shiv Saini</div>
                   <div class="periodical"><em>The 21st USENIX Symposium on Networked Systems Design and Implementation (NSDI) 2024</em></div>
-                  <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a
-                      href="https://doi.org/10.48550/arXiv.2312.04429" class="btn btn-sm z-depth-0" role="button"
+                  <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
+                      href="https://doi.org/10.48550/arXiv.2312.04429" class="pub-link"
                       target="_blank" rel="noopener noreferrer">PDF</a> </div>
                   <div class="abstract hidden">
                     <p>Text-to-image generation using diffusion models has seen explosive popularity owing to their
@@ -559,13 +570,13 @@
             </li>
             <li>
               <div class="row">
-                <div class="col-sm-2 abbr"><abbr class="badge">ESEC/FSE'23</abbr></div>
-                <div id="paper3" class="col-sm-8">
+                <div class="col-sm-2 abbr"><abbr class="badge">FSE'23</abbr></div>
+                <div class="col-sm-8">
                   <div class="title">Outage-Watch: Early Prediction of Outages using Extreme Event Regularizer</div>
                   <div class="author"><em><strong>Shubham Agarwal</strong></em>, Sarthak Chakraborty, Shaddy Garg, Sumit Bisht, Chahat Jain, Ashritha Gonuguntla, Shiv Saini</div>
                   <div class="periodical"><em>The 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2023</em></div>
-                  <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a
-                      href="https://dl.acm.org/doi/10.1145/3611643.3616316" class="btn btn-sm z-depth-0" role="button"
+                  <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
+                      href="https://dl.acm.org/doi/10.1145/3611643.3616316" class="pub-link"
                       target="_blank" rel="noopener noreferrer">PDF</a> </div>
                   <div class="abstract hidden">
                     <p>Cloud services are omnipresent and critical cloud service failure is a fact of life. In order to
@@ -592,13 +603,13 @@
             <li>
               <div class="row">
                 <div class="col-sm-2 abbr"><abbr class="badge">ASE'23</abbr></div>
-                <div id="paper4" class="col-sm-8">
+                <div class="col-sm-8">
                   <div class="title">ESRO: Experience Assisted Service Reliability against Outages</div>
                   <div class="author">Sarthak Chakraborty, <em><strong>Shubham Agarwal</strong></em>, Shaddy Garg, Abhimanyu Sethia, Udit Narayan Pandey, Videh Aggarwal, Shiv Saini</div>
                   <div class="periodical"><em>The 38th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2023</em></div>
-                  <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a
+                  <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://conf.researchr.org/details/ase-2023/ase-2023-papers/93/ESRO-Experience-Assisted-Service-Reliability-against-Outages"
-                      class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+                      class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
                   </div>
                   <div class="abstract hidden">
                     <p>Modern cloud services are prone to failures due to their complex architecture, making diagnosis a
@@ -629,13 +640,12 @@
             <li>
               <div class="row">
                 <div class="col-sm-2 abbr"><abbr class="badge">WWW'23</abbr></div>
-                <div id="paper5" class="col-sm-8">
+                <div class="col-sm-8">
                   <div class="title">CausIL: Causal Graph for Instance Level Microservice Data</div>
                   <div class="author">Sarthak Chakraborty, Shaddy Garg<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Ayush Chauhan, Shiv Saini</div>
                   <div class="periodical"><em>The ACM Web Conference (WWW) 2023</em></div>
-                  <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a
-                      href="https://dl.acm.org/doi/abs/10.1145/3543507.3583274" class="btn btn-sm z-depth-0"
-                      role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+                  <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
+                      href="https://dl.acm.org/doi/abs/10.1145/3543507.3583274" class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
                   </div>
                   <div class="abstract hidden">
                     <p>AI-based monitoring has become crucial for cloud-based services due to its scale. A common
@@ -661,12 +671,12 @@
             <li>
               <div class="row">
                 <div class="col-sm-2 abbr"><abbr class="badge">SIGMOD'23</abbr></div>
-                <div id="paper6" class="col-sm-8">
-                  <div class="title">Fast Natural Language Based Data Exploration with Samples</div>
+                <div class="col-sm-8">
+                  <div class="title">Fast Natural Language-Based Data Exploration with Samples</div>
                   <div class="author"><em><strong>Shubham Agarwal</strong></em>, Gromit Yeuk-Yin Chan, Shaddy Garg, Tong Yu, Subrata Mitra</div>
-                  <div class="periodical"><em>International Conference on Management of Data (SIGMOD) 2023, Demo track</em></div>
-                  <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a
-                      href="https://dl.acm.org/doi/10.1145/3555041.3589724" class="btn btn-sm z-depth-0" role="button"
+                  <div class="periodical"><em>International Conference on Management of Data (SIGMOD) 2023, Demo</em></div>
+                  <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
+                      href="https://dl.acm.org/doi/10.1145/3555041.3589724" class="pub-link"
                       target="_blank" rel="noopener noreferrer">PDF</a>
                   </div>
                   <div class="abstract hidden">
@@ -689,10 +699,6 @@
               </div>
             </li>
 
-
-
-
-
           </ol>
 
 
@@ -700,7 +706,7 @@
 
         <div class="publications">
           <h2 id="preprintid">Preprints</h2>
-          <ol class="bibliography">
+          <ol class="bibliography scroll-panel">
 
             <li>
               <div class="row">
@@ -709,7 +715,7 @@
                   <div class="title">DuoDiscover: Scaling Autonomous Discovery Beyond the Evaluation Bottleneck</div>
                   <div class="author"><em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Akshat Gupta<sup>*</sup>, Mike Heddes<sup>*</sup>, Dilara Soylu<sup>*</sup>, Rui Meng, Patrick Tser Jern Kon, et al.</div>
                   <div class="periodical"><em>arXiv preprint 2026</em></div>
-                  <div class="links"><a href="https://arxiv.org/abs/2610.17184" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2610.17184" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
               </div>
             </li>
@@ -721,7 +727,7 @@
                   <div class="title">AdaEvolve: Adaptive LLM Driven Zeroth-Order Optimization</div>
                   <div class="author">Mert Cemri<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Akshat Gupta, Shu Liu, Audrey Cheng, Qiuyang Mang, et al.</div>
                   <div class="periodical"><em>arXiv preprint 2026</em></div>
-                  <div class="links"><a href="https://arxiv.org/abs/2602.20133" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://skydiscover-ai.github.io/blog-adaevolve.html" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Blog</a></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2602.20133" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://skydiscover-ai.github.io/blog-adaevolve.html" class="pub-link" target="_blank" rel="noopener noreferrer">Blog</a></div>
                 </div>
               </div>
             </li>
@@ -733,7 +739,7 @@
                   <div class="title">The Time is Here for Just-in-Time Systems: Challenges and Opportunities</div>
                   <div class="author">Shu Liu<sup>*</sup>, Alexander Krentsel<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Mert Cemri<sup>*</sup>, Ziming Mao, Soujanya Ponnapalli, et al.</div>
                   <div class="periodical"><em>arXiv preprint 2026; NeurIPS 2026 ML for Systems Workshop</em></div>
-                  <div class="links"><a href="https://arxiv.org/abs/2605.24096" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2605.24096" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
               </div>
             </li>
@@ -744,8 +750,8 @@
                 <div class="col-sm-8">
                   <div class="title">Fantastic Adaptive Taxonomies and How to Use Them</div>
                   <div class="author">Mert Cemri<sup>*</sup>, Andrei Cojocaru<sup>*</sup>, Melissa Pan, Shu Liu, <em><strong>Shubham Agarwal</strong></em>, Alexander Krentsel, et al.</div>
-                  <div class="periodical"><em>arXiv preprint 2026; ICML 2026 FAGEN Workshop</em> &nbsp;<strong style="color: var(--global-theme-color);">Best Paper Award, Oral</strong></div>
-                  <div class="links"><a href="https://arxiv.org/abs/2607.16387" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a></div>
+                  <div class="periodical"><em>arXiv preprint 2026; ICML 2026 FAGEN Workshop</em> <span class="award">Best Paper</span> <span class="award">Oral</span></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2607.16387" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
               </div>
             </li>
@@ -757,7 +763,7 @@
                   <div class="title">Reality Is the Final Verifier: On Two Key Gaps in Agentic Software Engineering</div>
                   <div class="author">Alexander Krentsel<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Mert Cemri<sup>*</sup>, Shu Liu<sup>*</sup>, Sidharth Sankhe, Ziming Mao, Matei Zaharia, Ion Stoica</div>
                   <div class="periodical"><em>arXiv preprint 2026</em></div>
-                  <div class="links"><a href="https://arxiv.org/abs/2609.12039" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://x.com/istoica05/status/2100950168333906251" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">X thread</a></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2609.12039" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://x.com/istoica05/status/2100950168333906251" class="pub-link" target="_blank" rel="noopener noreferrer">X thread</a></div>
                 </div>
               </div>
             </li>
@@ -769,7 +775,19 @@
                   <div class="title">Let the Barbarians In: How AI Can Accelerate Systems Performance Research</div>
                   <div class="author">Audrey Cheng<sup>*</sup>, Shu Liu<sup>*</sup>, Melissa Pan, Zhifei Li, <em><strong>Shubham Agarwal</strong></em>, Mert Cemri, et al.</div>
                   <div class="periodical"><em>arXiv preprint 2025</em></div>
-                  <div class="links"><a href="https://arxiv.org/abs/2512.14806" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://ucbskyadrs.github.io/blog/let-the-barbarians-in-how-ai-can-accelerate-system/" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Blog</a></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2512.14806" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://ucbskyadrs.github.io/blog/let-the-barbarians-in-how-ai-can-accelerate-system/" class="pub-link" target="_blank" rel="noopener noreferrer">Blog</a></div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="row">
+                <div class="col-sm-2 abbr"><abbr class="badge">arXiv'26</abbr></div>
+                <div class="col-sm-8">
+                  <div class="title">Dialogue to Discovery: Attribute-Aware Preference Elicitation for Conversational Product Search Assistants</div>
+                  <div class="author">Sarthak Harne, Natwar Modani, Debabrata Mahapatra, <em><strong>Shubham Agarwal</strong></em></div>
+                  <div class="periodical"><em>arXiv preprint 2026</em></div>
+                  <div class="links"><a href="https://arxiv.org/abs/2606.24194" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
               </div>
             </li>
@@ -779,7 +797,7 @@
 
         <div class="publications">
           <h2 id="patentid">Patents</h2>
-          <ol class="bibliography">
+          <ol class="bibliography scroll-panel">
 
             <li>
               <div class="row">
@@ -871,138 +889,105 @@
           </ol>
         </div>
 
-        <!-- News -->
-        <h2>News</h2>
-        <div class="news" style="overflow-y: auto; max-height: 250px;">
-
-          <div class="table-responsive">
+        <!-- Talks -->
+        <section class="home-section">
+          <h2 id="talksid">Talks</h2>
+          <p class="section-note"><sup>&dagger;</sup> joint talk with co-authors.</p>
+          <div class="timeline scroll-panel">
             <table class="table table-sm table-borderless">
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Nov 2026</th>
-                <td>Advanced to Ph.D. candidacy.</td>
+                <th scope="row">Dec 2026</th>
+                <td><span class="talk-title">Inductive Deductive Synthesis</span><span class="talk-venue">Oral presentation, NeurIPS 2026, Sydney</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Nov 2026</th>
-                <td>Talks on SkyDiscover at the SGLang Summit, Microsoft Azure Research, AMD and Inferact.</td>
+                <th scope="row">Nov 2026</th>
+                <td><span class="talk-title">Perfmaxxing SGLang for Next-Gen Model Serving with SkyDiscover</span><span class="talk-venue">SGLang Summit</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Oct 2026</th>
-                <td>DuoDiscover is out on <a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">arXiv</a>.</td>
+                <th scope="row">Nov 2026</th>
+                <td><span class="talk-title">Scaling Swarms of Agents</span><span class="talk-venue">Microsoft Azure Research (Systems)</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Sep 2026</th>
-                <td>Inductive Deductive Synthesis accepted as an <b>Oral</b> at NeurIPS 2026; RCStat also accepted.</td>
+                <th scope="row">Nov 2026</th>
+                <td><span class="talk-title">Continuous Optimization of Inference Engines with Self-Evolving Agents</span><span class="talk-venue">AMD &times; UC Berkeley</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Aug 2026</th>
-                <td>Arming Data Agents with Tribal Knowledge accepted at VLDB 2026.</td>
+                <th scope="row">Nov 2026</th>
+                <td><span class="talk-title">Towards Continuous Optimization of LLM Inference Systems with SkyDiscover</span><span class="talk-venue">Inferact<sup>&dagger;</sup></span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jul 2026</th>
-                <td><b>Best Paper Award</b> at the ICML 2026 FAGEN Workshop for Fantastic Adaptive Taxonomies.</td>
+                <th scope="row">Nov 2026</th>
+                <td><span class="talk-title">SkyDiscover-Synthesize</span><span class="talk-venue">Broadcom &times; Sky Computing Lab Research Review</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jul 2026</th>
-                <td>EvoX accepted at COLM 2026.</td>
+                <th scope="row">Oct 2026</th>
+                <td><span class="talk-title">SkyDiscover-Synthesize</span><span class="talk-venue">EPIC Data Lab Retreat, Berkeley</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jun 2026</th>
-                <td>Joined Google Cloud AI Research as a Student Researcher.</td>
+                <th scope="row">Oct 2026</th>
+                <td><span class="talk-title">SkyDiscover-Optimize</span><span class="talk-venue">AMD, San Jose<sup>&dagger;</sup></span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Apr 2026</th>
-                <td>SkyDiscover accepted as a demo at ACM CAIS 2026, where I co-organized the AI Agents for Discovery in the Wild workshop.</td>
+                <th scope="row">Oct 2026</th>
+                <td><span class="talk-title">Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First</span><span class="talk-venue">Frontier Research Club<sup>&dagger;</sup></span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Mar 2026</th>
-                <td>Released <a href="https://skydiscover-ai.github.io/blog.html" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for AI-driven discovery.</td>
+                <th scope="row">Sep 2026</th>
+                <td><span class="talk-title">Agents for Optimization</span><span class="talk-venue">Google</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jan 2026</th>
-                <td>FlowCast accepted at ICLR 2026.</td>
+                <th scope="row">Jun 2026</th>
+                <td><span class="talk-title">SkyDiscover: A Flexible Framework for AI-Driven Scientific and Algorithmic Discovery</span><span class="talk-venue">AIDDA 2026<sup>&dagger;</sup></span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Oct 2025</th>
-                <td>Supporting Our AI Overlords accepted at CIDR 2026.</td>
+                <th scope="row">Apr 2026</th>
+                <td><span class="talk-title">Arming Data Agents with Tribal Knowledge</span><span class="talk-venue">UC Berkeley Database Seminar</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Aug 2025</th>
-                <td>Started my Ph.D. at UC Berkeley.</td>
+                <th scope="row">Nov 2024</th>
+                <td><span class="talk-title">Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models</span><span class="talk-venue">UW Systems Group</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jul 2025</th>
-                <td>Cache-Craft accepted at SIGMOD 2025.</td>
+                <th scope="row">Apr 2024</th>
+                <td><span class="talk-title">Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models</span><span class="talk-venue">NSDI 2024, Santa Clara</span></td>
               </tr>
 
               <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jul 2024</th>
-                <td>ReCon accepted at ECCV 2024.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Mar 2024</th>
-                <td>Presented our NSDI 2024 paper on approximate caching for diffusion models, and a <a href="/docs/Shubham_Poster_Accepted_NSDI_24.pdf" target="_blank" rel="noopener noreferrer">poster</a> on quality-aware prompt scheduling.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Feb 2024</th>
-                <td>Promoted to Research Associate II at Adobe Research.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jan 2024</th>
-                <td>ScaleViz accepted at PAKDD 2024.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Dec 2023</th>
-                <td>Approximate caching for diffusion models accepted at NSDI 2024.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Sep 2023</th>
-                <td>Presented ESRO at ASE 2023.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jul 2023</th>
-                <td>ESRO accepted at ASE 2023.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Feb 2023</th>
-                <td>Natural-language data exploration demo accepted at SIGMOD 2023.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Aug 2022</th>
-                <td>Graduated with a Bachelor's in Computer Science from BITS Pilani.</td>
-              </tr>
-
-              <tr>
-                <th scope="row" style="white-space: nowrap; padding-right: 1rem;">Jul 2022</th>
-                <td>Joined Adobe Research as a Research Associate.</td>
+                <th scope="row">Sep 2023</th>
+                <td><span class="talk-title">ESRO: Experience Assisted Service Reliability against Outages</span><span class="talk-venue">ASE 2023, Luxembourg</span></td>
               </tr>
 
             </table>
           </div>
-        </div>
-        <br>
-        <br>
+        </section>
+
+        <!-- Honors -->
+        <section class="home-section">
+          <h2 id="honorsid">Honors and Service</h2>
+          <ul class="plain-list">
+            <li>Best Paper Award, ICML 2026 FAGEN Workshop, for <i>Fantastic Adaptive Taxonomies and How to Use Them</i></li>
+            <li>UC Berkeley EECS Ph.D. Fellowship (2025)</li>
+            <li>Laude Institute Slingshots grant (team, 2026)</li>
+            <li>Co-organizer and Area Chair, <i>AI Agents for Discovery in the Wild</i> workshop, CAIS 2026</li>
+            <li>External reviewer for NeurIPS, ICLR, ATC, AISTATS and AAAI</li>
+            <li>Officer, CSGE, UC Berkeley, helping turn research into startups</li>
+            <li>Industry mentor to a UMass master's student team researching LLM-based RAG systems</li>
+          </ul>
+        </section>
 
         <!-- Social -->
         <div class="social">
@@ -1017,9 +1002,6 @@
                 class="fab fa-linkedin"></i></a>
           </div>
 
-          <div class="contact-note">
-            Email is the best way to reach me.
-          </div>
           <!-- Heart link -->
           <div style="text-align: center; margin-top: 10px; margin-bottom: -10px;">
             <a href="https://harshita-chopra.github.io/" style="color: #ff1462; text-decoration: none; font-size: 7px; opacity: 0.9;">♥</a>
@@ -1035,13 +1017,10 @@
   </div>
 
   <!-- Footer -->
-  <footer class="fixed-bottom">
-    <div class="container mt-0">
-      © Copyright 2026 Shubham Agarwal. Powered by <a href="https://jekyllrb.com/" target="_blank"
-        rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank"
-        rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank"
-        rel="noopener noreferrer">GitHub Pages</a>.
-
+  <footer class="site-footer">
+    <div class="container">
+      © 2026 Shubham Agarwal. Built on the <a href="https://github.com/alshedivat/al-folio" target="_blank"
+        rel="noopener noreferrer">al-folio</a> theme.
     </div>
   </footer>
 
@@ -1080,25 +1059,9 @@
   </script>
   <script defer type="text/javascript" id="MathJax-script"
     src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var profile = document.getElementById('profile');
-      var btn = document.querySelector('.show-more-btn');
-      if (!btn) return;
-      btn.addEventListener('click', function () {
-        if (profile.style.display === 'none' || profile.style.display === '') {
-          profile.style.display = 'block';
-          btn.textContent = 'Show Less';
-        } else {
-          profile.style.display = 'none';
-          btn.textContent = 'Show More';
-        }
-      });
-    });
-  </script>
+  <script src="/assets/js/home.js"></script>
 
 
 </body>
