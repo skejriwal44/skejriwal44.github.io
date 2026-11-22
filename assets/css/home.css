@@ -197,8 +197,9 @@ button {
     grid-row: span 4;
     grid-template-rows: subgrid;
     border: 1px solid var(--home-border);
-    border-radius: 10px;
-    padding: 1.15rem 1.3rem 1.25rem;
+    border-top: 2px solid var(--global-theme-color);
+    border-radius: 8px;
+    padding: 1.1rem 1.3rem 1.2rem;
 }
 
 .post article h3.thread {
@@ -220,7 +221,7 @@ button {
 }
 
 .research-item {
-    padding: 0.95rem 0 1rem;
+    padding: 0.9rem 0 0.95rem;
     border-top: 1px solid var(--home-border);
 }
 
@@ -228,22 +229,64 @@ button {
     padding-bottom: 0;
 }
 
+.research-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 0.9rem;
+    align-items: baseline;
+}
+
 .research-name {
     font-weight: 600;
     line-height: 1.35;
 }
 
-.research-tag {
-    display: block;
-    margin-top: 0.1rem;
+.research-head .num {
+    color: var(--global-theme-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.research-tag,
+.research-head .label {
     color: var(--home-muted);
-    font-size: 0.94rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.35;
+}
+
+.research-tag {
     font-style: italic;
 }
 
+.research-head .label {
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .research-more[open] .research-grid {
+        animation: research-in 0.22s ease-out;
+    }
+}
+
+@keyframes research-in {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .research-item p {
-    margin: 0.35rem 0 0 !important;
+    margin: 0.55rem 0 0 !important;
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -389,18 +432,18 @@ button {
 }
 
 .award {
-    display: inline-block;
-    margin-left: 0.3rem;
-    padding: 0 0.5rem;
-    border-radius: 999px;
-    background: var(--global-theme-color);
-    color: #fff;
-    font-size: 0.78rem;
+    margin-left: 0.55rem;
+    color: var(--global-theme-color);
+    font-size: 0.94rem;
+    font-style: normal;
     font-weight: 600;
-    letter-spacing: 0.01em;
-    line-height: 1.4rem;
-    vertical-align: 0.05em;
     white-space: nowrap;
+}
+
+.award::before {
+    content: "\2605";
+    margin-right: 0.28em;
+    font-size: 0.85em;
 }
 
 .publications ol.bibliography li .links {

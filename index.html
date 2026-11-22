@@ -200,37 +200,44 @@
               <p class="research-lead">Agents that keep optimizing a running system, reaching <b>2.17&times;</b> over
                 AMD's expert-tuned SGLang.</p>
               <div class="research-item">
-                <div class="research-name"><span><a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">DuoDiscover</a></span>
-                  <span class="research-tag">Integrated into Google Antigravity</span></div>
-                <p>Agents write fast evaluators for slow benchmarks, then recheck on the real system:
-                  <b>1.92&times;</b> faster vLLM serving, first on <b>121 of 235</b> <span class="nb">SOL-Exec</span>
-                  GPU kernels, and a CPU prefetcher that beats the best human and AlphaEvolve designs
-                  <span class="nb">(<b>6.3%</b> vs. 3.8%)</span>.</p>
+                <div class="research-head">
+                  <div class="research-name"><a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">DuoDiscover</a></div>
+                  <span class="num">1.92&times;</span>
+                  <span class="research-tag">Integrated into Google Antigravity</span>
+                  <span class="label">faster vLLM serving</span>
+                </div>
+                <p>Agents write fast evaluators for slow benchmarks, then recheck on the real system. First on <b>121 of 235</b> <span class="nb">SOL-Exec</span> GPU kernels.</p>
               </div>
               <div class="research-item">
-                <div class="research-name"><span><a href="https://arxiv.org/abs/2602.20133" target="_blank" rel="noopener noreferrer">AdaEvolve</a> and <a
-                      href="https://arxiv.org/abs/2602.23413" target="_blank" rel="noopener noreferrer">EvoX</a></span> <span class="research-tag">COLM 2026</span></div>
-                <p>AdaEvolve treats discovery as adaptive zeroth-order optimization and tunes the search as it
-                  runs; EvoX goes a level up and lets the LLM rewrite the search itself. Together, they beat every
-                  open framework on <b>96%</b> of 196 tasks.</p>
+                <div class="research-head">
+                  <div class="research-name"><span><a href="https://arxiv.org/abs/2602.20133" target="_blank" rel="noopener noreferrer">AdaEvolve</a> and <a href="https://arxiv.org/abs/2602.23413" target="_blank" rel="noopener noreferrer">EvoX</a></span></div>
+                  <span class="num">96%</span>
+                  <span class="research-tag">COLM 2026</span>
+                  <span class="label">of 196 tasks</span>
+                </div>
+                <p>AdaEvolve tunes the search as it runs; EvoX lets the LLM rewrite it. Together, they beat every open framework.</p>
               </div>
             </div>
             <div class="research-card">
               <h3 class="thread">Building trustworthy systems</h3>
               <p class="research-lead">Agents that build new systems backed by tests and machine-checked proofs.</p>
               <div class="research-item">
-                <div class="research-name"><span><a href="https://arxiv.org/abs/2605.23109" target="_blank" rel="noopener noreferrer">Inductive Deductive
-                      Synthesis</a></span> <span class="research-tag">NeurIPS 2026 Oral</span></div>
-                <p>Proof-driven development: agents write code together with its Rocq proof. The result proves
-                  <b>all 7</b> consistency specs for distributed key-value stores (coding agents: 2), and the code
-                  runs up to <b>3&times;</b> faster than <span class="nb">hand-verified</span> code.</p>
+                <div class="research-head">
+                  <div class="research-name"><a href="https://arxiv.org/abs/2605.23109" target="_blank" rel="noopener noreferrer">Inductive Deductive Synthesis</a></div>
+                  <span class="num">7 of 7</span>
+                  <span class="research-tag">NeurIPS 2026 Oral</span>
+                  <span class="label">specs proved</span>
+                </div>
+                <p>Agents write code together with its Rocq proof. The code runs up to <b>3&times;</b> faster than <span class="nb">hand-verified</span> code.</p>
               </div>
               <div class="research-item">
-                <div class="research-name"><span><a href="https://arxiv.org/abs/2605.24096" target="_blank" rel="noopener noreferrer">Just-in-time
-                      systems</a></span> <span class="research-tag">NeurIPS 2026 ML for Systems Workshop</span></div>
-                <p>Test-driven development: agents build a system per workload and turn each caught shortcut into a
-                  test. Mac LLM engines run up to <b>2.7&times;</b> faster than prior servers, and key-value stores
-                  beat FASTER on <b>14 of 18</b> workloads.</p>
+                <div class="research-head">
+                  <div class="research-name"><a href="https://arxiv.org/abs/2605.24096" target="_blank" rel="noopener noreferrer">Just-in-time systems</a></div>
+                  <span class="num">2.7&times;</span>
+                  <span class="research-tag">NeurIPS 2026 Workshop</span>
+                  <span class="label">faster Mac LLMs</span>
+                </div>
+                <p>Agents build a system per workload and turn each caught shortcut into a test. Key-value stores beat FASTER on <b>14 of 18</b> workloads.</p>
               </div>
             </div>
           </div>
