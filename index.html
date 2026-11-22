@@ -166,7 +166,7 @@
               rel="noopener noreferrer">Sky Computing Lab</a> and the EPIC Data Lab. I am advised by Prof. <a
               href="https://people.eecs.berkeley.edu/~istoica/" target="_blank" rel="noopener noreferrer">Ion Stoica</a>
             and Prof. <a href="https://people.eecs.berkeley.edu/~adityagp/" target="_blank"
-              rel="noopener noreferrer">Aditya Parameswaran</a>. I am also a Student Researcher at Google Cloud AI Research, where I lead DuoDiscover, now part of Google Antigravity.
+              rel="noopener noreferrer">Aditya Parameswaran</a>. I am also a Student Researcher at Google Cloud AI Research, working with Chun-Liang Li, Rui Meng and Violet Peng.
           </p>
 
           <p>
@@ -174,7 +174,8 @@
             such as LLM serving engines and GPU kernels, and agents that build new systems backed by tests and
             <b>machine-checked proofs</b>. I am a core developer and maintainer of <a
               href="https://github.com/skydiscover-ai/skydiscover" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for
-            self-improving systems, which has 800+ GitHub stars and is used at Google, Uber and AMD.
+            self-improving systems, which has 800+ GitHub stars and is used at Google, Uber and AMD. Within it, I lead
+            DuoDiscover, now integrated into Google Antigravity.
           </p>
 
           <p>
@@ -194,42 +195,43 @@
         <!-- Research -->
         <details class="research-more" id="researchid">
           <summary>More about my research</summary>
-          <p class="research-intro">I work on two threads, both built on SkyDiscover, which improves on AMD's
-            expert-tuned SGLang by <b>2.17&times;</b>.</p>
           <div class="research-grid">
             <div class="research-card">
               <h3 class="thread">Continuous optimization</h3>
+              <p class="research-lead">Agents that keep optimizing a running system, reaching <b>2.17&times;</b> over
+                AMD's expert-tuned SGLang.</p>
               <div class="research-item">
                 <div class="research-name"><span><a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">DuoDiscover</a></span>
-                  <span class="research-tag">Part of Google Antigravity</span></div>
-                <p>I lead DuoDiscover at Google. Its agents write fast evaluators for slow benchmarks and recheck
-                  them against the real system. Results: <b>1.92&times;</b> faster vLLM serving, first place on
-                  <b>121 of 235</b> SOL-Exec GPU kernels, a CPU prefetcher that beats the best human and AlphaEvolve
-                  designs <span class="nb">(<b>6.3%</b> vs. 3.8%)</span>, and double the speedup of human experts on
-                  <span class="nb">SWE-fficiency</span> <span class="nb">(<b>15.0&times;</b> vs. 6.9&times;)</span>.</p>
+                  <span class="research-tag">Integrated into Google Antigravity</span></div>
+                <p>Agents write fast evaluators for slow benchmarks, then recheck on the real system:
+                  <b>1.92&times;</b> faster vLLM serving, first on <b>121 of 235</b> <span class="nb">SOL-Exec</span>
+                  GPU kernels, and a CPU prefetcher that beats the best human and AlphaEvolve designs
+                  <span class="nb">(<b>6.3%</b> vs. 3.8%)</span>.</p>
               </div>
               <div class="research-item">
                 <div class="research-name"><span><a href="https://arxiv.org/abs/2602.20133" target="_blank" rel="noopener noreferrer">AdaEvolve</a> and <a
                       href="https://arxiv.org/abs/2602.23413" target="_blank" rel="noopener noreferrer">EvoX</a></span> <span class="research-tag">COLM 2026</span></div>
-                <p>With my co-authors, I made the search itself adapt. AdaEvolve tunes the search as it runs; EvoX
-                  lets the LLM rewrite it. Together, they beat every open framework on <b>96%</b> of 196 tasks.</p>
+                <p>AdaEvolve treats discovery as adaptive zeroth-order optimization and tunes the search as it
+                  runs; EvoX goes a level up and lets the LLM rewrite the search itself. Together, they beat every
+                  open framework on <b>96%</b> of 196 tasks.</p>
               </div>
             </div>
             <div class="research-card">
               <h3 class="thread">Building trustworthy systems</h3>
+              <p class="research-lead">Agents that build new systems backed by tests and machine-checked proofs.</p>
               <div class="research-item">
                 <div class="research-name"><span><a href="https://arxiv.org/abs/2605.23109" target="_blank" rel="noopener noreferrer">Inductive Deductive
                       Synthesis</a></span> <span class="research-tag">NeurIPS 2026 Oral</span></div>
-                <p>Proof-driven development: our agents write code together with its Rocq proof. They prove
-                  <b>all 7</b> consistency specs for distributed key-value stores (coding agents: 2), with code up to
-                  <b>3&times;</b> faster than hand-verified code.</p>
+                <p>Proof-driven development: agents write code together with its Rocq proof. The result proves
+                  <b>all 7</b> consistency specs for distributed key-value stores (coding agents: 2), and the code
+                  runs up to <b>3&times;</b> faster than <span class="nb">hand-verified</span> code.</p>
               </div>
               <div class="research-item">
                 <div class="research-name"><span><a href="https://arxiv.org/abs/2605.24096" target="_blank" rel="noopener noreferrer">Just-in-time
                       systems</a></span> <span class="research-tag">NeurIPS 2026 ML for Systems Workshop</span></div>
-                <p>Test-driven development: our agents build a system per workload and turn each caught shortcut
-                  into a test. Mac LLM engines run up to <b>2.7&times;</b> faster than prior servers, and key-value
-                  stores beat FASTER on <b>14 of 18</b> workloads.</p>
+                <p>Test-driven development: agents build a system per workload and turn each caught shortcut into a
+                  test. Mac LLM engines run up to <b>2.7&times;</b> faster than prior servers, and key-value stores
+                  beat FASTER on <b>14 of 18</b> workloads.</p>
               </div>
             </div>
           </div>
@@ -238,12 +240,12 @@
         <!-- News -->
         <section class="home-section">
         <h2 id="newsid">News</h2>
-        <div class="news scroll-panel">
+        <div class="news scroll-panel" data-noun="updates">
             <table class="table table-sm table-borderless">
 
               <tr>
                 <th scope="row">Nov 2026</th>
-                <td>Advanced to Ph.D. candidacy.</td>
+                <td class="milestone"><span class="emoji" aria-hidden="true">🎓</span>Advanced to Ph.D. candidacy.</td>
               </tr>
 
               <tr>
@@ -258,7 +260,7 @@
 
               <tr>
                 <th scope="row">Sep 2026</th>
-                <td>Inductive Deductive Synthesis accepted as an <b>Oral</b> at NeurIPS 2026; RCStat also accepted.</td>
+                <td><span class="emoji" aria-hidden="true">⭐</span>Inductive Deductive Synthesis accepted as an <b>Oral</b> at NeurIPS 2026; RCStat also accepted.</td>
               </tr>
 
               <tr>
@@ -268,7 +270,7 @@
 
               <tr>
                 <th scope="row">Jul 2026</th>
-                <td><b>Best Paper Award</b> at the ICML 2026 FAGEN Workshop for Fantastic Adaptive Taxonomies.</td>
+                <td><span class="emoji" aria-hidden="true">🏆</span><b>Best Paper Award</b> at the ICML 2026 FAGEN Workshop for Fantastic Adaptive Taxonomies.</td>
               </tr>
 
               <tr>
@@ -283,12 +285,12 @@
 
               <tr>
                 <th scope="row">Apr 2026</th>
-                <td>SkyDiscover accepted as a demo at ACM CAIS 2026, where I co-organized the AI Agents for Discovery in the Wild workshop.</td>
+                <td>SkyDiscover accepted as a <b>Spotlight</b> demo at ACM CAIS 2026, where I co-organized the AI Agents for Discovery in the Wild workshop.</td>
               </tr>
 
               <tr>
                 <th scope="row">Mar 2026</th>
-                <td>Released <a href="https://skydiscover-ai.github.io/blog.html" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for AI-driven discovery.</td>
+                <td><span class="emoji" aria-hidden="true">🚀</span>Released <a href="https://skydiscover-ai.github.io/blog.html" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for AI-driven discovery.</td>
               </tr>
 
               <tr>
@@ -303,7 +305,7 @@
 
               <tr>
                 <th scope="row">Aug 2025</th>
-                <td>Started my Ph.D. at UC Berkeley.</td>
+                <td class="milestone"><span class="emoji" aria-hidden="true">🐻</span>Started my Ph.D. at UC Berkeley.</td>
               </tr>
 
               <tr>
@@ -366,18 +368,18 @@
         </section>
 
         <div class="publications">
-          <h2 id="pubid">Publications</h2>
+          <h2 id="pubid">Publications <span class="count">17</span></h2>
           <p class="section-note"><sup>*</sup> equal contribution. Full list on <a
               href="https://scholar.google.com/citations?user=jzTgdZoAAAAJ&amp;hl=en" target="_blank"
               rel="noopener noreferrer">Google Scholar</a>.</p>
-          <ol class="bibliography scroll-panel">
+          <ol class="bibliography scroll-panel" data-noun="papers">
 
             <li>
               <div class="row">
                 <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Inductive Deductive Synthesis: Co-Evolving Code-and-Proof Generation</div>
-                  <div class="author"><em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Alexander Krentsel<sup>*</sup>, Shu Liu<sup>*</sup>, Mert Cemri<sup>*</sup>, Audrey Cheng, Rui Meng, Tomas Pfister, Chun-Liang Li, Sylvia Ratnasamy, Aditya Parameswaran, Matei Zaharia, Ion Stoica, Mohsen Lesani</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Alexander&nbsp;Krentsel<sup>*</sup>, Shu&nbsp;Liu<sup>*</sup>, Mert&nbsp;Cemri<sup>*</sup>, Audrey&nbsp;Cheng, Rui&nbsp;Meng, et&nbsp;al.</div>
                   <div class="periodical"><em>The 40th Conference on Neural Information Processing Systems (NeurIPS) 2026</em> <span class="award">Oral</span></div>
                   <div class="links"><a href="https://neurips.cc/virtual/2026/oral/150231" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://arxiv.org/abs/2605.23109" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
@@ -389,7 +391,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">RCStat: A Statistical Framework of Relative Contextualization in Transformers</div>
-                  <div class="author">Debabrata Mahapatra, <em><strong>Shubham Agarwal</strong></em>, Apoorv Saxena, Subrata Mitra</div>
+                  <div class="author">Debabrata&nbsp;Mahapatra, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Apoorv&nbsp;Saxena, Subrata&nbsp;Mitra</div>
                   <div class="periodical"><em>The 40th Conference on Neural Information Processing Systems (NeurIPS) 2026</em></div>
                   <div class="links"><a href="https://neurips.cc/virtual/2026/poster/155548" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a></div>
                 </div>
@@ -401,7 +403,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">COLM'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">EvoX: Meta-Evolution for Automated Discovery</div>
-                  <div class="author">Shu Liu<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Monishwaran Maheswaran, Mert Cemri, Qiuyang Mang, Zhifei Li,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Shu&nbsp;Liu<sup>*</sup>, <em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Monishwaran&nbsp;Maheswaran, Mert&nbsp;Cemri, Qiuyang&nbsp;Mang, et&nbsp;al.</div>
                   <div class="periodical"><em>The 3rd Conference on Language Modeling (COLM) 2026</em></div>
                   <div class="links"><a href="https://arxiv.org/abs/2602.23413" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://skydiscover-ai.github.io/blog-evox.html" class="pub-link" target="_blank" rel="noopener noreferrer">Blog</a></div>
                 </div>
@@ -413,7 +415,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">VLDB'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Arming Data Agents with Tribal Knowledge</div>
-                  <div class="author"><em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Asim Biswal<sup>*</sup>, Sepanta Zeighami<sup>*</sup>, Alvin Cheung, Joseph E. Gonzalez, Aditya G. Parameswaran</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Asim&nbsp;Biswal<sup>*</sup>, Sepanta&nbsp;Zeighami<sup>*</sup>, Alvin&nbsp;Cheung, Joseph&nbsp;E.&nbsp;Gonzalez, et&nbsp;al.</div>
                   <div class="periodical"><em>Proceedings of the VLDB Endowment (VLDB) 2026</em></div>
                   <div class="links"><a href="https://arxiv.org/abs/2602.13521" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
@@ -425,7 +427,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">CAIS'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">SkyDiscover: A Flexible, Adaptive Framework for AI-Driven Scientific and Algorithmic Discovery</div>
-                  <div class="author">Shu Liu, Mert Cemri, <em><strong>Shubham Agarwal</strong></em>, Alexander Krentsel, Ashwin Naren, Qiuyang Mang,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Shu&nbsp;Liu, Mert&nbsp;Cemri, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Alexander&nbsp;Krentsel, Ashwin&nbsp;Naren, Qiuyang&nbsp;Mang, et&nbsp;al.</div>
                   <div class="periodical"><em>The 1st ACM Conference on AI and Agentic Systems (CAIS) 2026, Demo</em> <span class="award">Spotlight</span></div>
                   <div class="links"><a href="https://caisconf.org/program/2026/demos/skydiscover/" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://github.com/skydiscover-ai/skydiscover" class="pub-link" target="_blank" rel="noopener noreferrer">Code</a> <a href="https://skydiscover-ai.github.io/blog.html" class="pub-link" target="_blank" rel="noopener noreferrer">Blog</a></div>
                 </div>
@@ -437,7 +439,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">ICLR'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">FlowCast: Trajectory Forecasting for Scalable Zero-Cost Speculative Flow Matching</div>
-                  <div class="author">Divya Jyoti Bajpai, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Apoorv Saxena<sup>*</sup>, Kuldeep Sharad Kulkarni, Subrata Mitra, Manjesh Kumar Hanawal</div>
+                  <div class="author">Divya&nbsp;Jyoti&nbsp;Bajpai, <em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Apoorv&nbsp;Saxena<sup>*</sup>, Kuldeep&nbsp;Sharad&nbsp;Kulkarni, et&nbsp;al.</div>
                   <div class="periodical"><em>The 14th International Conference on Learning Representations (ICLR) 2026</em></div>
                   <div class="links"><a href="https://iclr.cc/virtual/2026/poster/10008104" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a></div>
                 </div>
@@ -449,7 +451,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">CIDR'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First</div>
-                  <div class="author">Shu Liu, Soujanya Ponnapalli, Shreya Shankar, Sepanta Zeighami, Alan Zhu, <em><strong>Shubham Agarwal</strong></em>,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Shu&nbsp;Liu, Soujanya&nbsp;Ponnapalli, Shreya&nbsp;Shankar, &hellip;, <em><strong>Shubham&nbsp;Agarwal</strong></em>, et&nbsp;al.</div>
                   <div class="periodical"><em>The 16th Conference on Innovative Data Systems Research (CIDR) 2026</em></div>
                   <div class="links"><a href="https://vldb.org/cidrdb/papers/2026/p32-liu.pdf" class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a></div>
                 </div>
@@ -461,7 +463,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">Middleware'25</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Argus: Quality-Aware High-Throughput Text-to-Image Inference Serving System</div>
-                  <div class="author"><em><strong>Shubham Agarwal</strong></em>, Subrata Mitra, Saud Iqbal</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal</strong></em>, Subrata&nbsp;Mitra, Saud&nbsp;Iqbal</div>
                   <div class="periodical"><em>The 26th ACM/IFIP International Middleware Conference (Middleware) 2025</em></div>
                   <div class="links"><a href="https://doi.org/10.1145/3721462.3770765" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://arxiv.org/abs/2511.06724" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
@@ -473,7 +475,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">SIGMOD'25</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Cache-Craft: Managing Chunk-Caches for Efficient Retrieval-Augmented Generation</div>
-                  <div class="author"><em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Sai Sundaresan<sup>*</sup>, Subrata Mitra, Debabrata Mahapatra, Archit Gupta, Rounak Sharma, Nirmal Joshua Kapu, Tong Yu, Shiv Saini</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Sai&nbsp;Sundaresan<sup>*</sup>, Subrata&nbsp;Mitra, Debabrata&nbsp;Mahapatra, Archit&nbsp;Gupta, et&nbsp;al.</div>
                   <div class="periodical"><em>International Conference on Management of Data (SIGMOD) 2025</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="/docs/CacheCraft_SIGMOD_2025.pdf"
@@ -491,7 +493,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">UAI'25</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Root Cause Analysis of Failures from Partial Causal Structures</div>
-                  <div class="author">Azam Ikram<sup>*</sup>, Kenneth Lee<sup>*</sup>, <em><strong>Shubham Agarwal</strong></em>, Shiv Kumar Saini, Saurabh Bagchi, Murat Kocaoglu</div>
+                  <div class="author">Azam&nbsp;Ikram<sup>*</sup>, Kenneth&nbsp;Lee<sup>*</sup>, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Shiv&nbsp;Kumar&nbsp;Saini, Saurabh&nbsp;Bagchi, Murat&nbsp;Kocaoglu</div>
                   <div class="periodical"><em>The 41st Conference on Uncertainty in Artificial Intelligence (UAI) 2025</em></div>
                   <div class="links"><a href="https://proceedings.mlr.press/v286/ikram25a.html" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a></div>
                 </div>
@@ -503,7 +505,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">ECCV'24</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">ReCon: Training-Free Acceleration for Text-to-Image Synthesis with Retrieval of Concept Prompt Trajectories</div>
-                  <div class="author">Chen-Yi Lu<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Mehrab Tanjim, Kanak Mahadik, Anup Rao, Subrata Mitra, Shiv K Saini, Saurabh Bagchi, Somali Chaterji</div>
+                  <div class="author">Chen-Yi&nbsp;Lu<sup>*</sup>, <em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Mehrab&nbsp;Tanjim, Kanak&nbsp;Mahadik, Anup&nbsp;Rao, Subrata&nbsp;Mitra, et&nbsp;al.</div>
                   <div class="periodical"><em>The 18th European Conference on Computer Vision (ECCV) 2024</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7666_ECCV_2024_paper.php"
@@ -533,7 +535,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">PAKDD'24</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">ScaleViz: Scaling Visualization Recommendation Models on Large Data</div>
-                  <div class="author">Ghazi Shazan Ahmad, <em><strong>Shubham Agarwal</strong></em>, Subrata Mitra, Ryan Rossi, Manav Doshi, Syam Manoj Kumar Paila</div>
+                  <div class="author">Ghazi&nbsp;Shazan&nbsp;Ahmad, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Subrata&nbsp;Mitra, Ryan&nbsp;Rossi, Manav&nbsp;Doshi, et&nbsp;al.</div>
                   <div class="periodical"><em>The 28th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD) 2024</em> <span class="award">Oral</span></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://arxiv.org/abs/2411.18657"
@@ -562,7 +564,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">NSDI'24</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Approximate Caching for Efficiently Serving Text-to-Image Diffusion Models</div>
-                  <div class="author"><em><strong>Shubham Agarwal</strong></em>, Subrata Mitra, Sarthak Chakraborty, Srikrishna Karanam, Koyel Mukherjee, Shiv Saini</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal</strong></em>, Subrata&nbsp;Mitra, Sarthak&nbsp;Chakraborty, Srikrishna&nbsp;Karanam, et&nbsp;al.</div>
                   <div class="periodical"><em>The 21st USENIX Symposium on Networked Systems Design and Implementation (NSDI) 2024</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://doi.org/10.48550/arXiv.2312.04429" class="pub-link"
@@ -589,8 +591,8 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">FSE'23</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Outage-Watch: Early Prediction of Outages using Extreme Event Regularizer</div>
-                  <div class="author"><em><strong>Shubham Agarwal</strong></em>, Sarthak Chakraborty, Shaddy Garg, Sumit Bisht, Chahat Jain, Ashritha Gonuguntla, Shiv Saini</div>
-                  <div class="periodical"><em>The 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2023</em></div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal</strong></em>, Sarthak&nbsp;Chakraborty, Shaddy&nbsp;Garg, Sumit&nbsp;Bisht, Chahat&nbsp;Jain, et&nbsp;al.</div>
+                  <div class="periodical"><em>The 31st ACM Symposium on the Foundations of Software Engineering (ESEC/FSE) 2023</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://dl.acm.org/doi/10.1145/3611643.3616316" class="pub-link"
                       target="_blank" rel="noopener noreferrer">PDF</a> </div>
@@ -621,7 +623,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">ASE'23</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">ESRO: Experience Assisted Service Reliability against Outages</div>
-                  <div class="author">Sarthak Chakraborty, <em><strong>Shubham Agarwal</strong></em>, Shaddy Garg, Abhimanyu Sethia, Udit Narayan Pandey, Videh Aggarwal, Shiv Saini</div>
+                  <div class="author">Sarthak&nbsp;Chakraborty, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Shaddy&nbsp;Garg, Abhimanyu&nbsp;Sethia, et&nbsp;al.</div>
                   <div class="periodical"><em>The 38th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2023</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://conf.researchr.org/details/ase-2023/ase-2023-papers/93/ESRO-Experience-Assisted-Service-Reliability-against-Outages"
@@ -658,7 +660,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">WWW'23</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">CausIL: Causal Graph for Instance Level Microservice Data</div>
-                  <div class="author">Sarthak Chakraborty, Shaddy Garg<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Ayush Chauhan, Shiv Saini</div>
+                  <div class="author">Sarthak&nbsp;Chakraborty, Shaddy&nbsp;Garg<sup>*</sup>, <em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Ayush&nbsp;Chauhan, Shiv&nbsp;Saini</div>
                   <div class="periodical"><em>The ACM Web Conference (WWW) 2023</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://dl.acm.org/doi/abs/10.1145/3543507.3583274" class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
@@ -689,7 +691,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">SIGMOD'23</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Fast Natural Language-Based Data Exploration with Samples</div>
-                  <div class="author"><em><strong>Shubham Agarwal</strong></em>, Gromit Yeuk-Yin Chan, Shaddy Garg, Tong Yu, Subrata Mitra</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal</strong></em>, Gromit&nbsp;Yeuk-Yin&nbsp;Chan, Shaddy&nbsp;Garg, Tong&nbsp;Yu, Subrata&nbsp;Mitra</div>
                   <div class="periodical"><em>International Conference on Management of Data (SIGMOD) 2023, Demo</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://dl.acm.org/doi/10.1145/3555041.3589724" class="pub-link"
@@ -721,7 +723,7 @@
         </div>
 
         <div class="publications">
-          <h2 id="preprintid">Preprints</h2>
+          <h2 id="preprintid">Preprints <span class="count">7</span></h2>
           <ol class="bibliography scroll-panel">
 
             <li>
@@ -729,7 +731,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">arXiv'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">DuoDiscover: Scaling Autonomous Discovery Beyond the Evaluation Bottleneck</div>
-                  <div class="author"><em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Akshat Gupta<sup>*</sup>, Mike Heddes<sup>*</sup>, Dilara Soylu<sup>*</sup>, Rui Meng, Patrick Tser Jern Kon,&nbsp;et&nbsp;al.</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Akshat&nbsp;Gupta<sup>*</sup>, Mike&nbsp;Heddes<sup>*</sup>, Dilara&nbsp;Soylu<sup>*</sup>, Rui&nbsp;Meng, et&nbsp;al.</div>
                   <div class="periodical"><em>arXiv preprint 2026</em></div>
                   <div class="links"><a href="https://arxiv.org/abs/2610.17184" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
@@ -741,7 +743,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">arXiv'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">AdaEvolve: Adaptive LLM Driven Zeroth-Order Optimization</div>
-                  <div class="author">Mert Cemri<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Akshat Gupta, Shu Liu, Audrey Cheng, Qiuyang Mang,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Mert&nbsp;Cemri<sup>*</sup>, <em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Akshat&nbsp;Gupta, Shu&nbsp;Liu, Audrey&nbsp;Cheng, Qiuyang&nbsp;Mang, et&nbsp;al.</div>
                   <div class="periodical"><em>arXiv preprint 2026</em></div>
                   <div class="links"><a href="https://arxiv.org/abs/2602.20133" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://skydiscover-ai.github.io/blog-adaevolve.html" class="pub-link" target="_blank" rel="noopener noreferrer">Blog</a></div>
                 </div>
@@ -753,7 +755,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">arXiv'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">The Time is Here for Just-in-Time Systems: Challenges and Opportunities</div>
-                  <div class="author">Shu Liu<sup>*</sup>, Alexander Krentsel<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Mert Cemri<sup>*</sup>, Ziming Mao, Soujanya Ponnapalli,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Shu&nbsp;Liu<sup>*</sup>, Alexander&nbsp;Krentsel<sup>*</sup>, <em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Mert&nbsp;Cemri<sup>*</sup>, Ziming&nbsp;Mao, et&nbsp;al.</div>
                   <div class="periodical"><em>arXiv preprint 2026; NeurIPS 2026 ML for Systems Workshop</em></div>
                   <div class="links"><a href="https://arxiv.org/abs/2605.24096" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
@@ -765,7 +767,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">arXiv'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Fantastic Adaptive Taxonomies and How to Use Them</div>
-                  <div class="author">Mert Cemri<sup>*</sup>, Andrei Cojocaru<sup>*</sup>, Melissa Pan, Shu Liu, <em><strong>Shubham Agarwal</strong></em>, Alexander Krentsel,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Mert&nbsp;Cemri<sup>*</sup>, Andrei&nbsp;Cojocaru<sup>*</sup>, Melissa&nbsp;Pan, Shu&nbsp;Liu, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Alexander&nbsp;Krentsel, et&nbsp;al.</div>
                   <div class="periodical"><em>arXiv preprint 2026; ICML 2026 FAGEN Workshop</em> <span class="award">Best Paper</span> <span class="award">Oral</span></div>
                   <div class="links"><a href="https://arxiv.org/abs/2607.16387" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
@@ -777,7 +779,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">arXiv'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Reality Is the Final Verifier: On Two Key Gaps in Agentic Software Engineering</div>
-                  <div class="author">Alexander Krentsel<sup>*</sup>, <em><strong>Shubham Agarwal<sup>*</sup></strong></em>, Mert Cemri<sup>*</sup>, Shu Liu<sup>*</sup>, Sidharth Sankhe, Ziming Mao, Matei Zaharia, Ion Stoica</div>
+                  <div class="author">Alexander&nbsp;Krentsel<sup>*</sup>, <em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Mert&nbsp;Cemri<sup>*</sup>, Shu&nbsp;Liu<sup>*</sup>, Sidharth&nbsp;Sankhe, et&nbsp;al.</div>
                   <div class="periodical"><em>arXiv preprint 2026</em></div>
                   <div class="links"><a href="https://arxiv.org/abs/2609.12039" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://x.com/istoica05/status/2100950168333906251" class="pub-link" target="_blank" rel="noopener noreferrer">X thread</a></div>
                 </div>
@@ -789,7 +791,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">arXiv'25</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Let the Barbarians In: How AI Can Accelerate Systems Performance Research</div>
-                  <div class="author">Audrey Cheng<sup>*</sup>, Shu Liu<sup>*</sup>, Melissa Pan, Zhifei Li, <em><strong>Shubham Agarwal</strong></em>, Mert Cemri,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Audrey&nbsp;Cheng<sup>*</sup>, Shu&nbsp;Liu<sup>*</sup>, Melissa&nbsp;Pan, Zhifei&nbsp;Li, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Mert&nbsp;Cemri, et&nbsp;al.</div>
                   <div class="periodical"><em>arXiv preprint 2025</em></div>
                   <div class="links"><a href="https://arxiv.org/abs/2512.14806" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a> <a href="https://ucbskyadrs.github.io/blog/let-the-barbarians-in-how-ai-can-accelerate-system/" class="pub-link" target="_blank" rel="noopener noreferrer">Blog</a></div>
                 </div>
@@ -801,7 +803,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">arXiv'26</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Dialogue to Discovery: Attribute-Aware Preference Elicitation for Conversational Product Search Assistants</div>
-                  <div class="author">Sarthak Harne, Natwar Modani, Debabrata Mahapatra, <em><strong>Shubham Agarwal</strong></em></div>
+                  <div class="author">Sarthak&nbsp;Harne, Natwar&nbsp;Modani, Debabrata&nbsp;Mahapatra, <em><strong>Shubham&nbsp;Agarwal</strong></em></div>
                   <div class="periodical"><em>arXiv preprint 2026</em></div>
                   <div class="links"><a href="https://arxiv.org/abs/2606.24194" class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a></div>
                 </div>
@@ -812,7 +814,7 @@
         </div>
 
         <div class="publications">
-          <h2 id="patentid">Patents</h2>
+          <h2 id="patentid">Patents <span class="count">8</span></h2>
           <ol class="bibliography scroll-panel">
 
             <li>
@@ -820,7 +822,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">USPTO</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Using Reinforcement Learning to Recommend Data Visualizations</div>
-                  <div class="author"><em><strong>Shubham Agarwal</strong></em>, Subrata Mitra,&nbsp;et&nbsp;al.</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal</strong></em>, Subrata&nbsp;Mitra, et&nbsp;al.</div>
                   <div class="periodical"><em>US Patent 12,443,621 (granted)</em></div>
                 </div>
               </div>
@@ -831,7 +833,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">USPTO</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Data Exploration using Natural Language with Data Sampling</div>
-                  <div class="author">Subrata Mitra, <em><strong>Shubham Agarwal</strong></em>, Gromit Yeuk-Yin Chan, Shaddy Garg, Tong Yu</div>
+                  <div class="author">Subrata&nbsp;Mitra, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Gromit&nbsp;Yeuk-Yin&nbsp;Chan, Shaddy&nbsp;Garg, Tong&nbsp;Yu</div>
                   <div class="periodical"><em>US Patent 12,664,160 (granted)</em></div>
                 </div>
               </div>
@@ -842,7 +844,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">USPTO</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Multi-Modal Retrieval using an Intermediate Noise State</div>
-                  <div class="author"><em><strong>Shubham Agarwal</strong></em>, Subrata Mitra,&nbsp;et&nbsp;al.</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal</strong></em>, Subrata&nbsp;Mitra, et&nbsp;al.</div>
                   <div class="periodical"><em>US Patent 12,694,578 (granted)</em></div>
                 </div>
               </div>
@@ -853,7 +855,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">USPTO</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Relative Contextualization using Pre-Softmax Logits in Transformers</div>
-                  <div class="author">Debabrata Mahapatra, <em><strong>Shubham Agarwal</strong></em>,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Debabrata&nbsp;Mahapatra, <em><strong>Shubham&nbsp;Agarwal</strong></em>, et&nbsp;al.</div>
                   <div class="periodical"><em>US Patent Application 19/285,322</em></div>
                 </div>
               </div>
@@ -864,7 +866,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">USPTO</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Managing Chunk Caches for Efficient Retrieval-Augmented Generation in LLMs</div>
-                  <div class="author"><em><strong>Shubham Agarwal</strong></em>, Archit Gupta, Nirmal Joshua Kapu, Debabrata Mahapatra, Subrata Mitra, Shiv Kumar Saini, Rounak Sharma, Sai Narayan Sundaresan, Tong Yu</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal</strong></em>, Archit&nbsp;Gupta, Nirmal&nbsp;Joshua&nbsp;Kapu, Debabrata&nbsp;Mahapatra, Subrata&nbsp;Mitra, et&nbsp;al.</div>
                   <div class="periodical"><em>US Patent Application 19/074,061</em></div>
                 </div>
               </div>
@@ -875,7 +877,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">USPTO</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">ReCon: Acceleration for Text-to-Image Synthesis with Concept Trajectories</div>
-                  <div class="author">Chen-Yi Lu, <em><strong>Shubham Agarwal</strong></em>,&nbsp;et&nbsp;al.</div>
+                  <div class="author">Chen-Yi&nbsp;Lu, <em><strong>Shubham&nbsp;Agarwal</strong></em>, et&nbsp;al.</div>
                   <div class="periodical"><em>US Patent Application 63/698,535</em></div>
                 </div>
               </div>
@@ -886,7 +888,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">USPTO</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">Micromanaging Prompts for High-Throughput Text-to-Image Inference</div>
-                  <div class="author"><em><strong>Shubham Agarwal</strong></em>, Subrata Mitra, Saud Iqbal</div>
+                  <div class="author"><em><strong>Shubham&nbsp;Agarwal</strong></em>, Subrata&nbsp;Mitra, Saud&nbsp;Iqbal</div>
                   <div class="periodical"><em>US Patent Application 18/808,654</em></div>
                 </div>
               </div>
@@ -897,7 +899,7 @@
                 <div class="col-sm-2 abbr"><abbr class="badge">USPTO</abbr></div>
                 <div class="col-sm-8">
                   <div class="title">A System and Method for Outage Forecasting</div>
-                  <div class="author">Shaddy Garg, <em><strong>Shubham Agarwal</strong></em>, Sumit Bisht, Nikhil Sheoran, Chahat Jain, Ashritha Gonuguntla, Shiv Saini</div>
+                  <div class="author">Shaddy&nbsp;Garg, <em><strong>Shubham&nbsp;Agarwal</strong></em>, Sumit&nbsp;Bisht, Nikhil&nbsp;Sheoran, Chahat&nbsp;Jain, et&nbsp;al.</div>
                   <div class="periodical"><em>US Patent Application 17/656,263</em></div>
                 </div>
               </div>
@@ -907,9 +909,9 @@
 
         <!-- Talks -->
         <section class="home-section">
-          <h2 id="talksid">Talks</h2>
+          <h2 id="talksid">Talks <span class="count">15</span></h2>
           <p class="section-note"><sup>&dagger;</sup> joint talk with co-authors.</p>
-          <div class="timeline scroll-panel">
+          <div class="timeline scroll-panel" data-noun="talks">
             <table class="table table-sm table-borderless">
 
               <tr>

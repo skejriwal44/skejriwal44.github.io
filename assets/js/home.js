@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   Array.prototype.forEach.call(panels, function (panel) {
     var count = panel.querySelectorAll(':scope > li, tr').length;
+    var noun = panel.getAttribute('data-noun');
     var button = document.createElement('button');
     button.type = 'button';
     button.className = 'panel-toggle';
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       panel.classList.toggle('at-start', panel.scrollTop <= 4);
       panel.classList.toggle('at-end', panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 8);
       button.hidden = !expanded && !overflowing;
-      button.textContent = expanded ? 'Collapse' : 'Show all ' + count;
+      button.textContent = expanded ? 'Show fewer' : 'Show all ' + count + (noun ? ' ' + noun : '');
     }
 
     button.addEventListener('click', function () {
