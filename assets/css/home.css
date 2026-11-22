@@ -470,6 +470,7 @@ button {
 
 .news table.table td,
 .timeline table.table td {
+    font-weight: 400;
     padding: 0.3rem 0;
     font-size: 1rem;
     line-height: 1.5;
@@ -486,7 +487,7 @@ button {
     font-size: 0.95em;
 }
 
-.news td.milestone {
+.news table.table td.milestone {
     font-weight: 600;
 }
 
@@ -564,8 +565,8 @@ button {
 
     .profile.float-right {
         float: none !important;
-        width: 60%;
-        max-width: 240px;
+        width: 48%;
+        max-width: 190px;
         margin: 0 0 1.25rem;
     }
 
