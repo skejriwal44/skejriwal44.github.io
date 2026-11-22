@@ -174,7 +174,7 @@
             such as LLM serving engines and GPU kernels, and agents that build new systems backed by tests and
             <b>machine-checked proofs</b>. I am a core developer and maintainer of <a
               href="https://github.com/skydiscover-ai/skydiscover" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for
-            self-improving systems.
+            self-improving systems, which has 800+ GitHub stars and is used at Google, Uber and AMD.
           </p>
 
           <p>
@@ -192,47 +192,48 @@
         </div>
 
         <!-- Research -->
-        <section class="home-section">
-          <h2 id="researchid">Research</h2>
-          <p><a href="https://github.com/skydiscover-ai/skydiscover" target="_blank" rel="noopener noreferrer">SkyDiscover</a> is our open-source framework
-            for self-improving systems. It has 800+ GitHub stars, is used at Google, Uber and AMD, and improves on
-            AMD's expert-tuned SGLang by <b>2.17&times;</b>. My work on it follows two threads.</p>
-
+        <details class="research-more" id="researchid">
+          <summary>More about my research</summary>
+          <p class="research-intro">I work on two threads, both built on SkyDiscover, which improves on AMD's
+            expert-tuned SGLang by <b>2.17&times;</b>.</p>
           <div class="research-grid">
             <div class="research-card">
-          <h3 class="thread">Continuous optimization</h3>
-          <div class="research-item">
-            <div class="research-name"><span><a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">DuoDiscover</a></span> <span class="research-tag">Part of Google Antigravity</span></div>
-            <p>Agents write fast evaluators for slow benchmarks and recheck them against the real system. Results:
-              <b>1.92&times;</b> faster vLLM serving, first place on <b>121 of 235</b> SOL-Exec GPU kernels, a CPU
-              prefetcher that beats the best human and AlphaEvolve designs <span class="nb">(<b>6.3%</b> vs. 3.8%)</span>, and double the
-              speedup of human experts on <span class="nb">SWE-fficiency</span> <span class="nb">(<b>15.0&times;</b> vs. 6.9&times;)</span>.</p>
-          </div>
-          <div class="research-item">
-            <div class="research-name"><span><a href="https://arxiv.org/abs/2602.20133" target="_blank" rel="noopener noreferrer">AdaEvolve</a> and <a
-                href="https://arxiv.org/abs/2602.23413" target="_blank" rel="noopener noreferrer">EvoX</a></span> <span class="research-tag">COLM 2026</span></div>
-            <p>AdaEvolve tunes the search as it runs; EvoX lets the LLM rewrite it. Together, they beat every open
-              framework on <b>96%</b> of 196 tasks.</p>
-          </div>
-
+              <h3 class="thread">Continuous optimization</h3>
+              <div class="research-item">
+                <div class="research-name"><span><a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">DuoDiscover</a></span>
+                  <span class="research-tag">Part of Google Antigravity</span></div>
+                <p>I lead DuoDiscover at Google. Its agents write fast evaluators for slow benchmarks and recheck
+                  them against the real system. Results: <b>1.92&times;</b> faster vLLM serving, first place on
+                  <b>121 of 235</b> SOL-Exec GPU kernels, a CPU prefetcher that beats the best human and AlphaEvolve
+                  designs <span class="nb">(<b>6.3%</b> vs. 3.8%)</span>, and double the speedup of human experts on
+                  <span class="nb">SWE-fficiency</span> <span class="nb">(<b>15.0&times;</b> vs. 6.9&times;)</span>.</p>
+              </div>
+              <div class="research-item">
+                <div class="research-name"><span><a href="https://arxiv.org/abs/2602.20133" target="_blank" rel="noopener noreferrer">AdaEvolve</a> and <a
+                      href="https://arxiv.org/abs/2602.23413" target="_blank" rel="noopener noreferrer">EvoX</a></span> <span class="research-tag">COLM 2026</span></div>
+                <p>With my co-authors, I made the search itself adapt. AdaEvolve tunes the search as it runs; EvoX
+                  lets the LLM rewrite it. Together, they beat every open framework on <b>96%</b> of 196 tasks.</p>
+              </div>
             </div>
             <div class="research-card">
-          <h3 class="thread">Building trustworthy systems</h3>
-          <div class="research-item">
-            <div class="research-name"><span><a href="https://arxiv.org/abs/2605.23109" target="_blank" rel="noopener noreferrer">Inductive Deductive Synthesis</a></span> <span class="research-tag">NeurIPS 2026 Oral</span></div>
-            <p>Proof-driven development: agents write code together with its Rocq proof. It proves <b>all 7</b>
-              consistency specs for distributed key-value stores (coding agents: 2), with code up to
-              <b>3&times;</b> faster than hand-verified code.</p>
+              <h3 class="thread">Building trustworthy systems</h3>
+              <div class="research-item">
+                <div class="research-name"><span><a href="https://arxiv.org/abs/2605.23109" target="_blank" rel="noopener noreferrer">Inductive Deductive
+                      Synthesis</a></span> <span class="research-tag">NeurIPS 2026 Oral</span></div>
+                <p>Proof-driven development: our agents write code together with its Rocq proof. They prove
+                  <b>all 7</b> consistency specs for distributed key-value stores (coding agents: 2), with code up to
+                  <b>3&times;</b> faster than hand-verified code.</p>
+              </div>
+              <div class="research-item">
+                <div class="research-name"><span><a href="https://arxiv.org/abs/2605.24096" target="_blank" rel="noopener noreferrer">Just-in-time
+                      systems</a></span> <span class="research-tag">NeurIPS 2026 ML for Systems Workshop</span></div>
+                <p>Test-driven development: our agents build a system per workload and turn each caught shortcut
+                  into a test. Mac LLM engines run up to <b>2.7&times;</b> faster than prior servers, and key-value
+                  stores beat FASTER on <b>14 of 18</b> workloads.</p>
+              </div>
+            </div>
           </div>
-          <div class="research-item">
-            <div class="research-name"><span><a href="https://arxiv.org/abs/2605.24096" target="_blank" rel="noopener noreferrer">Just-in-time systems</a></span> <span class="research-tag">NeurIPS 2026 ML for Systems Workshop</span></div>
-            <p>Test-driven development: agents build a system per workload and turn each caught shortcut into a
-              test. Mac LLM engines run up to <b>2.7&times;</b> faster than prior servers, and key-value stores beat
-              FASTER on <b>14 of 18</b> workloads.</p>
-          </div>
-    </div>
-          </div>
-        </section>
+        </details>
 
         <!-- News -->
         <section class="home-section">

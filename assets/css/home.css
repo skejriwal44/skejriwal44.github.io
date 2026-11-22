@@ -134,11 +134,53 @@ button {
 
 /* Research threads */
 
+.research-more {
+    margin-top: 1.1rem;
+    scroll-margin-top: 72px;
+}
+
+.research-more summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--global-theme-color);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+}
+
+.research-more summary::-webkit-details-marker {
+    display: none;
+}
+
+.research-more summary::after {
+    content: "";
+    width: 0.45em;
+    height: 0.45em;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-0.12em) rotate(45deg);
+    transition: transform 0.15s ease;
+}
+
+.research-more[open] summary::after {
+    transform: translateY(0.1em) rotate(-135deg);
+}
+
+.research-more summary:hover {
+    text-decoration: underline;
+}
+
+.research-intro {
+    margin: 0.9rem 0 0 !important;
+}
+
 .research-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.1rem;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
 }
 
 .research-card {
