@@ -545,6 +545,27 @@ button {
     font-size: 0.95em;
 }
 
+.news .news-icon {
+    display: inline-block;
+    width: 1.15em;
+    margin-right: 0.4rem;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+.news .news-icon.google {
+    color: #4285f4;
+}
+
+.news svg.news-icon {
+    height: 0.9em;
+    vertical-align: -0.06em;
+}
+
+.news .news-icon.adobe {
+    fill: #fa0f00;
+}
+
 .news table.table td.milestone {
     font-weight: 600;
 }
