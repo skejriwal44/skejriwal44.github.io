@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     panel.insertAdjacentElement('afterend', button);
 
     // A list that only just overflows is shown in full rather than clipped.
-    if (panel.scrollHeight < panel.clientHeight * 1.75) {
+    if (!panel.hasAttribute('data-clip') && panel.scrollHeight < panel.clientHeight * 1.75) {
       panel.classList.add('expanded');
       button.remove();
       return;
