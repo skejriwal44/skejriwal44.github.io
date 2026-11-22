@@ -251,6 +251,12 @@ button {
     white-space: nowrap;
 }
 
+.research-head .num small {
+    color: var(--home-muted);
+    font-size: 0.86rem;
+    font-weight: 400;
+}
+
 .research-tag,
 .research-head .label {
     color: var(--home-muted);
@@ -294,7 +300,7 @@ button {
 /* Scrollable panels */
 
 .scroll-panel {
-    max-height: min(68vh, 620px);
+    max-height: min(82vh, 860px);
     overflow-y: auto;
     overscroll-behavior: auto;
     padding-right: 0.5rem;
@@ -305,6 +311,10 @@ button {
 .news.scroll-panel,
 .timeline.scroll-panel {
     max-height: 310px;
+}
+
+.scroll-panel.compact {
+    max-height: 372px;
 }
 
 .scroll-panel::-webkit-scrollbar {
@@ -619,7 +629,11 @@ button {
     }
 
     .scroll-panel {
-        max-height: 62vh;
+        max-height: 70vh;
+    }
+
+    .scroll-panel.compact {
+        max-height: 420px;
     }
 
     .news.scroll-panel,
@@ -684,4 +698,18 @@ button {
     font-size: 1rem;
     line-height: 1.5;
     text-wrap: pretty;
+}
+
+.projects-container h2 {
+    margin-top: 2.2rem;
+}
+
+.projects-container h2:first-child {
+    margin-top: 0.4rem;
+}
+
+.projects-intro {
+    color: var(--home-muted);
+    font-size: 0.94rem;
+    margin: -0.2rem 0 1rem !important;
 }

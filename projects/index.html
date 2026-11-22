@@ -12,8 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Shubham Agarwal | projects</title>
     <meta name="author" content="Shubham Agarwal" />
-    <meta name="description" content="A growing collection of nifty projects" />
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
+    <meta name="description" content="Projects by Shubham Agarwal: SkyDiscover, self-improving systems, and earlier work at Adobe Research." />
+    <meta name="keywords" content="Shubham Agarwal, SkyDiscover, DuoDiscover, Inductive Deductive Synthesis, LLM serving" />
 
 
     <!-- Bootstrap & MDB -->
@@ -137,97 +137,44 @@
                 <div class="projects">
                     <!-- Display categorized projects -->
                     <div class="projects-container">
+                        <h2>SkyDiscover</h2>
+                        <p class="projects-intro">An <a href="https://github.com/skydiscover-ai/skydiscover" target="_blank" rel="noopener noreferrer">open-source framework</a>
+                            for self-improving systems. I am a core developer and maintainer. 800+ GitHub stars; used at
+                            Google, Uber and AMD.</p>
                         <div class="project-tile">
-                            <h4>Chunk-Caching for RAG in LLMs</h4>
-                            <span class="brief-description">Primary project (2024-25) + Undergraduate Internship (2024)</span>
-                            <p class="full-description">
-                                Created a key-value reuse technique for LLMs, enabling token recomputation savings of
-                                80–90% and significant reductions in prefill times. Included vLLM kernel-level
-                                implementations and GPU/CPU cache management systems. Contributed to a paper submission
-                                at SIGMOD 2025.
-                            </p>
+                            <h4>Continuous optimization: self-evolving search</h4>
+                            <span class="brief-description"><a href="https://arxiv.org/abs/2602.20133" target="_blank" rel="noopener noreferrer">AdaEvolve</a> (preprint) and <a href="https://arxiv.org/abs/2602.23413" target="_blank" rel="noopener noreferrer">EvoX</a> (COLM 2026)</span>
+                            <p class="full-description">AdaEvolve tunes the search as it runs; EvoX lets the LLM rewrite it. Together, they beat every open framework on 96% of 196 tasks. SkyDiscover reaches 2.17&times; over AMD's expert-tuned SGLang.</p>
+                        </div>
+                        <div class="project-tile">
+                            <h4>Continuous optimization: self-evolving evaluator</h4>
+                            <span class="brief-description"><a href="https://arxiv.org/abs/2610.17184" target="_blank" rel="noopener noreferrer">DuoDiscover</a>, integrated into Google Antigravity</span>
+                            <p class="full-description">Agents write fast evaluators for slow benchmarks and recheck them against the real system. Results include 1.92&times; faster vLLM serving, first place on 121 of 235 SOL-Exec GPU kernels, and a CPU prefetcher that beats the best human and AlphaEvolve designs (6.3% vs. 3.8%). On SWE-fficiency, DuoDiscover doubles the speedup of human experts (15.0&times; vs. 6.9&times;).</p>
+                        </div>
+                        <div class="project-tile">
+                            <h4>Trustworthy systems: proof-driven development</h4>
+                            <span class="brief-description"><a href="https://arxiv.org/abs/2605.23109" target="_blank" rel="noopener noreferrer">Inductive Deductive Synthesis</a>, NeurIPS 2026 Oral</span>
+                            <p class="full-description">Agents write code together with its Rocq proof. It proves all 7 consistency specs for distributed key-value stores (coding agents: 2), with code up to 3&times; faster than hand-verified code.</p>
+                        </div>
+                        <div class="project-tile">
+                            <h4>Trustworthy systems: test-driven development</h4>
+                            <span class="brief-description"><a href="https://arxiv.org/abs/2605.24096" target="_blank" rel="noopener noreferrer">Just-in-time systems</a>, NeurIPS 2026 ML for Systems Workshop</span>
+                            <p class="full-description">Agents build a just-in-time system per workload and turn each caught shortcut into a test. Mac LLM engines run up to 2.7&times; faster than prior servers, and key-value stores beat FASTER on 14 of 18 workloads.</p>
                         </div>
 
+                        <h2>Earlier work at Adobe Research</h2>
+                        <p class="projects-intro">Research Associate, 2022 to 2025. This work led to 12 papers and 8 patents
+                            (3 granted) and shipped into 3 Adobe products.</p>
                         <div class="project-tile">
-                            <h4>Interference-Aware LLM Inference Scheduling</h4>
-                            <span class="brief-description">Alind Khare (GaTech), PhD Internship (2024)</span>
-                            <p class="full-description">
-                                Designed an interference-aware LLM inference scheduling system with a two-level
-                                (global+local) scheduler. Optimized both TTFT and TPOT latencies
-                                using a Mixed-Integer Linear Programming (MILP) solution. Integrated predictive placement based
-                                on expected decode length.
-                            </p>
+                            <h4>Generative-AI serving</h4>
+                            <span class="brief-description">SIGMOD 2025, NSDI 2024, Middleware 2025, ECCV 2024</span>
+                            <p class="full-description">Chunk-cache reuse for retrieval-augmented generation, with 2.7&times; lower prefill cost (SIGMOD 2025). Approximate caching for diffusion models, with 19.8% lower latency, in production (NSDI 2024). Query-aware model routing, with 30% higher throughput.</p>
                         </div>
-
                         <div class="project-tile">
-                            <h4>Kernel Profiling and Optimization for A100 GPUs</h4>
-                            <span class="brief-description">Shweta Pandey (IISc), PhD Internship (2024)</span>
-                            <p class="full-description">
-                                Built a detailed performance profile of running models on NVIDIA A100 GPUs using
-                                advanced NVIDIA tools. Analyzed kernel compute, memory,
-                                and communication characteristics to identify bottlenecks. Extended profiling work to also include
-                                custom kernel scheduling decisions, achieving
-                                1.5–2X gains over naive batching techniques with Multi-Process Service
-                                (MPS) optimizations.
-                            </p>
+                            <h4>Cloud reliability</h4>
+                            <span class="brief-description">FSE 2023, ASE 2023, WWW 2023, UAI 2025</span>
+                            <p class="full-description">Outage forecasting that cuts detection time by 88%, in production (FSE 2023), and 27% more accurate root-cause identification (ASE 2023, WWW 2023, UAI 2025).</p>
                         </div>
-
-                       
-
-                        <div class="project-tile">
-                            <h4>Scaling Approximate Caching for Text-to-Image pipelines</h4>
-                            <span class="brief-description">Primary project (2024)</span>
-                            <p class="full-description">
-                                Developed a concept decomposition technique for recombining noise caches, 
-                                enhancing generation fidelity and efficiency (ECCV 2024), and designed a 
-                                dynamic scaling framework reducing GPU costs by 30% (NSDI 2024, ASPLOS 2025 
-                                under review).
-                            </p>
-                        </div>
-
-                        <div class="project-tile">
-                            <h4>Scaling Visualization Recommender Models on Large Data</h4>
-                            <span class="brief-description">Undergraduate Internship (2023)</span>
-                            <p class="full-description">
-                                Designed a plug-in framework for Visualization Recommender Systems, achieving up to
-                                10× speedup in latency. Implemented a scalable Deep Q-Learning algorithm to optimize input statistics selection.
-                                Contributed to a publication at PAKDD 2024.
-                            </p>
-                        </div>
-
-                        <div class="project-tile">
-                            <h4>Training Encoder-Decoder for Noise Retrieval</h4>
-                            <span class="brief-description">Undergraduate Internship (2023)</span>
-                            <p class="full-description">
-                                Trained a novel embedding architecture (bi-encoder/cross-encoder)
-                                for efficient retrieval of noise caches.
-                                Focused on enhancing retrieval efficiency and accuracy in approximate caching systems.
-                            </p>
-                        </div>
-
-
-                        <div class="project-tile">
-                            <h4>Approximate Caching for Diffusion Models</h4>
-                            <span class="brief-description">Primary project (2023)</span>
-                            <p class="full-description">
-                                Developed a caching system to skip redundant iterations by retrieving and refining noise states, 
-                                achieving up to 2x faster image generation with a 20% reduction in inference costs, deployed in 
-                                Adobe Firefly (NSDI 2024).
-                            </p>
-                        </div>
-
-                        <div class="project-tile">
-                            <h4>Cloud Systems Reliability</h4>
-                            <span class="brief-description">Primary project (2022-23)</span>
-                            <p class="full-description">
-                                Developed a proactive outage detection system reducing detection time by 88% 
-                                (FSE 2023) and advanced root cause analysis techniques with causal discovery
-                                 and knowledge graphs, improving resolution efficiency (WWW 2023, ASE 2023).       
-                            </p>
-                        </div>
-
-
-
                     </div>
                 </div>
 

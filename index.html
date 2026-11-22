@@ -163,7 +163,7 @@
           <p>
             Hi! I am a Ph.D. candidate in Computer Science at <a href="https://eecs.berkeley.edu/" target="_blank"
               rel="noopener noreferrer">UC&nbsp;Berkeley</a>, in the <a href="https://sky.cs.berkeley.edu/" target="_blank"
-              rel="noopener noreferrer">Sky&nbsp;Computing&nbsp;Lab</a> and the EPIC Data Lab. I am advised by Prof.&nbsp;<a
+              rel="noopener noreferrer">Sky&nbsp;Computing&nbsp;Lab</a> and the <a href="https://epic.berkeley.edu/" target="_blank" rel="noopener noreferrer">EPIC&nbsp;Data&nbsp;Lab</a>. I am advised by Prof.&nbsp;<a
               href="https://people.eecs.berkeley.edu/~istoica/" target="_blank" rel="noopener noreferrer">Ion&nbsp;Stoica</a>
             and Prof.&nbsp;<a href="https://people.eecs.berkeley.edu/~adityagp/" target="_blank"
               rel="noopener noreferrer">Aditya&nbsp;Parameswaran</a>. I am also a Student Researcher at Google Cloud AI Research, working with Chun-Liang&nbsp;Li, Rui&nbsp;Meng and Violet&nbsp;Peng.
@@ -212,7 +212,7 @@
                 <div class="research-head">
                   <div class="research-name"><span><a href="https://arxiv.org/abs/2602.20133" target="_blank" rel="noopener noreferrer">AdaEvolve</a> and <a href="https://arxiv.org/abs/2602.23413" target="_blank" rel="noopener noreferrer">EvoX</a></span></div>
                   <span class="num">96%</span>
-                  <span class="research-tag">COLM 2026</span>
+                  <span class="research-tag">EvoX at COLM 2026</span>
                   <span class="label">of 196 tasks</span>
                 </div>
                 <p>AdaEvolve tunes the search as it runs; EvoX lets the LLM rewrite it. Together, they beat every open framework.</p>
@@ -226,16 +226,16 @@
                   <div class="research-name"><a href="https://arxiv.org/abs/2605.23109" target="_blank" rel="noopener noreferrer">Inductive Deductive Synthesis</a></div>
                   <span class="num">7 of 7</span>
                   <span class="research-tag">NeurIPS 2026 Oral</span>
-                  <span class="label">specs proved</span>
+                  <span class="label">consistency specs</span>
                 </div>
-                <p>Agents write code together with its Rocq proof. The code runs up to <b>3&times;</b> faster than <span class="nb">hand-verified</span> code.</p>
+                <p>Agents write code together with its Rocq proof, for distributed key-value stores. The code runs up to <b>3&times;</b> faster than <span class="nb">hand-verified</span> code.</p>
               </div>
               <div class="research-item">
                 <div class="research-head">
                   <div class="research-name"><a href="https://arxiv.org/abs/2605.24096" target="_blank" rel="noopener noreferrer">Just-in-time systems</a></div>
-                  <span class="num">2.7&times;</span>
+                  <span class="num"><small>up to</small> 2.7&times;</span>
                   <span class="research-tag">NeurIPS 2026 Workshop</span>
-                  <span class="label">faster Mac LLMs</span>
+                  <span class="label">vs. prior Mac LLM servers</span>
                 </div>
                 <p>Agents build a system per workload and turn each caught shortcut into a test. Key-value stores beat FASTER on <b>14 of 18</b> workloads.</p>
               </div>
@@ -296,7 +296,7 @@
 
               <tr>
                 <th scope="row">Mar 2026</th>
-                <td><span class="emoji" aria-hidden="true">🚀</span>Released <a href="https://skydiscover-ai.github.io/blog.html" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for AI-driven discovery.</td>
+                <td><span class="emoji" aria-hidden="true">🚀</span>Released <a href="https://skydiscover-ai.github.io/blog.html" target="_blank" rel="noopener noreferrer">SkyDiscover</a>, our open-source framework for self-improving systems.</td>
               </tr>
 
               <tr>
@@ -315,8 +315,8 @@
               </tr>
 
               <tr>
-                <th scope="row">Jul 2025</th>
-                <td>Cache-Craft accepted at SIGMOD 2025.</td>
+                <th scope="row">Jun 2025</th>
+                <td>Cache-Craft published at SIGMOD 2025.</td>
               </tr>
 
               <tr>
@@ -325,7 +325,7 @@
               </tr>
 
               <tr>
-                <th scope="row">Mar 2024</th>
+                <th scope="row">Apr 2024</th>
                 <td>Presented our NSDI 2024 paper on approximate caching for diffusion models, and a <a href="/docs/Shubham_Poster_Accepted_NSDI_24.pdf" target="_blank" rel="noopener noreferrer">poster</a> on quality-aware prompt scheduling.</td>
               </tr>
 
@@ -488,7 +488,7 @@
                       class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
                   </div>
                   <div class="abstract hidden">
-                    <p>Retrieval-Augmented Generation (RAG) is often used with Large Language Models (LLMs) to infuse domain knowledge or userspecific information. In RAG, given a user query, a retriever extracts chunks of relevant text from a knowledge base. These chunks are sent to an LLM as part of the input prompt. Typically, any given chunk is repeatedly retrieved across user questions. However, currently, for every question, attention-layers in LLMs fully compute the key values (KVs) repeatedly for the input chunks, as state-of-the-art methods cannot reuse KV-caches when chunks appear at arbitrary locations with arbitrary contexts. Naive reuse leads to output quality degradation. This leads to potentially redundant computations on expensive GPUs and increases latency. In this work, we propose Cache-Craft, a system for managing and reusing precomputed KVs corresponding to the text chunks (we call chunk-caches) in RAG-based systems. We present how to identify chunk-caches that are reusable, how to efficiently perform a small fraction of recomputation to fix the cache to maintain output quality, and how to efficiently store and evict chunk-caches in the hardware for maximizing reuse while masking any overheads. With real production workloads as well as synthetic datasets, we show that Cache-Craft reduces redundant computation by 51% over SOTA prefix-caching and 75% over full recomputation. Additionally, with continuous batching on a real production workload, we get a 1.6× speedup in throughput and a 2× reduction in end-to-end response latency over prefix-caching while maintaining quality, for both the LLaMA-3-8B and LLaMA-3-70B models.</p>
+                    <p>Retrieval-Augmented Generation (RAG) is often used with Large Language Models (LLMs) to infuse domain knowledge or user-specific information. In RAG, given a user query, a retriever extracts chunks of relevant text from a knowledge base. These chunks are sent to an LLM as part of the input prompt. Typically, any given chunk is repeatedly retrieved across user questions. However, currently, for every question, attention-layers in LLMs fully compute the key values (KVs) repeatedly for the input chunks, as state-of-the-art methods cannot reuse KV-caches when chunks appear at arbitrary locations with arbitrary contexts. Naive reuse leads to output quality degradation. This leads to potentially redundant computations on expensive GPUs and increases latency. In this work, we propose Cache-Craft, a system for managing and reusing precomputed KVs corresponding to the text chunks (we call chunk-caches) in RAG-based systems. We present how to identify chunk-caches that are reusable, how to efficiently perform a small fraction of recomputation to fix the cache to maintain output quality, and how to efficiently store and evict chunk-caches in the hardware for maximizing reuse while masking any overheads. With real production workloads as well as synthetic datasets, we show that Cache-Craft reduces redundant computation by 51% over SOTA prefix-caching and 75% over full recomputation. Additionally, with continuous batching on a real production workload, we get a 1.6× speedup in throughput and a 2× reduction in end-to-end response latency over prefix-caching while maintaining quality, for both the LLaMA-3-8B and LLaMA-3-70B models.</p>
                   </div>
                 </div>
               </div>
@@ -515,7 +515,7 @@
                   <div class="periodical"><em>The 18th European Conference on Computer Vision (ECCV) 2024</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7666_ECCV_2024_paper.php"
-                      class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
+                      class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a>
                   </div>
                   <div class="abstract hidden">
                     <p>Text-to-image diffusion models excel in generating photo-realistic images but are hampered by
@@ -526,7 +526,7 @@
                       extracts visual "concepts" from prompts, forming a knowledge base that facilitates the creation of
                       adaptable trajectories. Consequently, ReCON surpasses existing retrieval-based methods, producing
                       high-fidelity images and reducing required Neural Function Evaluations (NFEs) by up to 40%.
-                      Extensive testing on MS-COCO, Pick-a-pick, and DiffusionDB datasets confirms that RECON
+                      Extensive testing on MS-COCO, Pick-a-pick, and DiffusionDB datasets confirms that ReCON
                       consistently outperforms established methods across multiple metrics such as Pick Score, CLIP
                       Score, and Aesthetics Score. A user study further indicates that 76% of images generated by ReCON
                       are rated as the highest fidelity, outperforming two competing methods, a purely text-based
@@ -545,11 +545,11 @@
                   <div class="periodical"><em>The 28th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD) 2024</em> <span class="award">Oral</span></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://arxiv.org/abs/2411.18657"
-                      class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
+                      class="pub-link" target="_blank" rel="noopener noreferrer">arXiv</a>
                   </div>
                   <div class="abstract hidden">
                     <p>Automated visualization recommendation (Vis-Rec) models help users to derive crucial insights
-                      from new datasets. Typically, such automated \visrec models first calculate a large number of
+                      from new datasets. Typically, such automated Vis-Rec models first calculate a large number of
                       statistics from the datasets and then use machine-learning models to score or classify multiple
                       visualizations choices to recommend the most effective ones, as per the statistics.
                       However, state-of-the art models rely on very large number of expensive statistics and therefore
@@ -560,7 +560,7 @@
                       specifically for a target dataset, that would be most effective while generating accurate enough
                       visual insights.
                       We show the effectiveness of our technique as it enables two state-of-the-art Vis-Rec models
-                      achieve upto 10x speedup in <i>time-to-visualize</i> on four large real-world datasets. </p>
+                      achieve up to 10x speedup in <i>time-to-visualize</i> on four large real-world datasets. </p>
                   </div>
                 </div>
               </div>
@@ -574,7 +574,7 @@
                   <div class="periodical"><em>The 21st USENIX Symposium on Networked Systems Design and Implementation (NSDI) 2024</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://doi.org/10.48550/arXiv.2312.04429" class="pub-link"
-                      target="_blank" rel="noopener noreferrer">PDF</a> </div>
+                      target="_blank" rel="noopener noreferrer">arXiv</a> </div>
                   <div class="abstract hidden">
                     <p>Text-to-image generation using diffusion models has seen explosive popularity owing to their
                       ability in producing high quality images adhering to text prompts. However, production-grade
@@ -601,7 +601,7 @@
                   <div class="periodical"><em>The 31st ACM Symposium on the Foundations of Software Engineering (ESEC/FSE) 2023</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://dl.acm.org/doi/10.1145/3611643.3616316" class="pub-link"
-                      target="_blank" rel="noopener noreferrer">PDF</a> </div>
+                      target="_blank" rel="noopener noreferrer">Paper</a> </div>
                   <div class="abstract hidden">
                     <p>Cloud services are omnipresent and critical cloud service failure is a fact of life. In order to
                       retain customers and prevent revenue loss, it is important to provide high reliability guarantees
@@ -633,7 +633,7 @@
                   <div class="periodical"><em>The 38th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2023</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://conf.researchr.org/details/ase-2023/ase-2023-papers/93/ESRO-Experience-Assisted-Service-Reliability-against-Outages"
-                      class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
+                      class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a>
                   </div>
                   <div class="abstract hidden">
                     <p>Modern cloud services are prone to failures due to their complex architecture, making diagnosis a
@@ -669,7 +669,7 @@
                   <div class="author">Sarthak&nbsp;Chakraborty, Shaddy&nbsp;Garg<sup>*</sup>, <em><strong>Shubham&nbsp;Agarwal<sup>*</sup></strong></em>, Ayush&nbsp;Chauhan, Shiv&nbsp;Saini</div>
                   <div class="periodical"><em>The ACM Web Conference (WWW) 2023</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
-                      href="https://dl.acm.org/doi/abs/10.1145/3543507.3583274" class="pub-link" target="_blank" rel="noopener noreferrer">PDF</a>
+                      href="https://dl.acm.org/doi/abs/10.1145/3543507.3583274" class="pub-link" target="_blank" rel="noopener noreferrer">Paper</a>
                   </div>
                   <div class="abstract hidden">
                     <p>AI-based monitoring has become crucial for cloud-based services due to its scale. A common
@@ -701,7 +701,7 @@
                   <div class="periodical"><em>International Conference on Management of Data (SIGMOD) 2023, Demo</em></div>
                   <div class="links"> <a class="abstract pub-link" role="button" tabindex="0">Abstract</a> <a
                       href="https://dl.acm.org/doi/10.1145/3555041.3589724" class="pub-link"
-                      target="_blank" rel="noopener noreferrer">PDF</a>
+                      target="_blank" rel="noopener noreferrer">Paper</a>
                   </div>
                   <div class="abstract hidden">
                     <p>The ability to extract insights from large amounts of data in a timely manner is a crucial
@@ -821,7 +821,7 @@
 
         <div class="publications">
           <h2 id="patentid">Patents <span class="count">8</span></h2>
-          <ol class="bibliography scroll-panel">
+          <ol class="bibliography scroll-panel compact" data-noun="patents">
 
             <li>
               <div class="row">
@@ -922,7 +922,7 @@
 
               <tr>
                 <th scope="row">Dec 2026</th>
-                <td><span class="talk-title">Inductive Deductive Synthesis</span><span class="talk-venue">Oral presentation, NeurIPS 2026, Sydney</span></td>
+                <td><span class="talk-title">Inductive Deductive Synthesis</span><span class="talk-venue">Oral presentation, NeurIPS 2026, Sydney (upcoming)</span></td>
               </tr>
 
               <tr>
