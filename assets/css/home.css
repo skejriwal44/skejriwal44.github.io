@@ -1,19 +1,24 @@
 /* Homepage styles, layered on top of main.css. */
 
 :root {
+    --global-theme-color: #1d4fc4;
+    --global-hover-color: #1d4fc4;
+    --global-code-bg-color: rgba(29, 79, 196, 0.05);
     --global-text-color: #1c1c1e;
     --home-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     --home-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
     --home-muted: #5c6066;
-    --home-tint: rgba(181, 9, 172, 0.08);
-    --home-tint-strong: rgba(181, 9, 172, 0.16);
+    --home-tint: rgba(29, 79, 196, 0.08);
+    --home-tint-strong: rgba(29, 79, 196, 0.18);
     --home-border: rgba(0, 0, 0, 0.1);
 }
 
 html[data-theme='dark'] {
+    --global-theme-color: #f27fc2;
+    --global-hover-color: #f27fc2;
     --home-muted: #a9adb3;
-    --home-tint: rgba(38, 152, 186, 0.14);
-    --home-tint-strong: rgba(38, 152, 186, 0.26);
+    --home-tint: rgba(242, 127, 194, 0.13);
+    --home-tint-strong: rgba(242, 127, 194, 0.26);
     --home-border: rgba(255, 255, 255, 0.14);
 }
 
